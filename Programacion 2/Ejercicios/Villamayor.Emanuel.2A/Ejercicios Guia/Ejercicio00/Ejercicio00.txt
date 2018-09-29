@@ -1,0 +1,6 @@
+Los tipos de datos tienen un metodo:
+
+ int. , tengo metodos y propiedades y atributos para usar
+ int.parase -> intenta transformar string a entero
+
+Tambien existe char.Parse , boolean.Parse ,etc

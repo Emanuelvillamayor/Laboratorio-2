@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\bin\Debug\clase06.exe.config
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\bin\Debug\clase06.exe
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\bin\Debug\clase06.pdb
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.Form1.resources
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.frmTinta.resources
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.Properties.Resources.resources
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.exe
+C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\clase06\obj\Debug\clase06.pdb

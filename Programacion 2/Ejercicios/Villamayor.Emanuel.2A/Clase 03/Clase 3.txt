@@ -1,0 +1,65 @@
+Sello
+
+mensaje : sting
+
+color : consoleColor
+imprimir : string
+borrar: void 
+imprimirEnColor : void
+-----------------------------------------------------------------
+   
+ Armar metodo "privado"(no puedo acceder desde el main solo de la Clase)
+  retorna string
+
+    ArmarFormatoMensaje():String  //si quiero imprimir con o sin color me genere reborde sello
+
+      Si mi mensaje es hola , que tenga un asterisco por cada letray lo cierre; 
+
+      Ejemplo :     ******
+                    *hola*
+                    ******
+
+
+      Este metodo lo tiene que utilizar Imprimir ya que imprimir en color siempre llama a imprimir;
+
+      Ideas para poder lograr formarlo;
+      
+
+-Propiedad de String que diga el largo , cualquier string tiene atributos y metodos.
+Generar vaiable de tipo string y de acuerdo a la longitud del mensaje sumarle dos y guardarle la cantidad de asteriscos.
+y a partir de for para que guarde esa cantidad de astericos.
+
+A una variable string le acumulo cantidad de caracteres como el lenght con un for ,SIEMPRE PIDE QUE TENGA VALOR INICIAL
+
+Luego del techito falta un salto  de linea, en la ultima iteracion falta "/n";
+
+Al final se concatena todo 
+
+
+-Hay problema si pongo un mensaje vacio , muestra los asteriscos igual .
+  1-Una forma es con un lenght y un if.
+
+METODO TRYPARSE intentar hacer la conversion entre string y tipo de dato pero si no puede hacerlo , lo que ahce es
+devolver booleano que diga no puede , pero si puede me devuelve el valor que le pase
+
+
+   -boolean TryParse(String,tipo de dato al que quiero transformar);
+
+Modificar OUT transforma el comportamiento del parametro para en vez de que sea de entrada sea de salida,
+la idea es que pueda pasarle variable desde la llama a la funcion pero no se va a usar como uno estandar
+sino qe lo puedo usar nuevamente a la salid del metodo y ese valor es el que se va a utilizar dentro del metodo
+
+si el boolean es tru puedo usar el parametro de "out".
+
+en el imprimir , queda :
+
+  if(sello,tryparse (sello.mensaje,out cadena)) //cadena lo marco como out en el parametro y tambien en la llamada
+{
+  sello.mensaje=cadena;
+}
+
+
+ 
+
+
+

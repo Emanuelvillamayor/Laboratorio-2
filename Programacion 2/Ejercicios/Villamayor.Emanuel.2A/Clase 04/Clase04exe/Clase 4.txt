@@ -1,0 +1,6 @@
+Un nuevo proyecto :
+ -Creamos un clase llamada "Cosa" :
+    -Atributos:
+         *Cadena
+         *numero 
+         *fecha

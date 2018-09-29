@@ -1,0 +1,14 @@
+Variable escalar : es una variable  individual de un unico dato 
+Los minimos y maximos tienen que ser si o si inicializados porque el compilador NO ANALIZA LOGICA, SOLO SE ASEGURA DE QUE EL PROGRAMA HAYA INICIADO.
+
+Formas de realizar cuentas entre numeros "Int" y "Float":
+
+  - int/int = int   -> Si hago cuentas entre dos enteros el resultado siempre es un entero.
+  - float = int / float   -> Se puede engañar al compilador metiendo uno de los dos como "flotante", es decir casteando solo UNO.-> promedio = acumulador / (float)i;
+    float = float/int        "   "       "     "     "          "     "   "   "  "    "      "        "   "      "        "   "  -> promedio = (float)acumulador / i;
+  - promedio = (float)(acumulador / 5.0);    -> Cuando tengo dos tipos distintos el resultado va a ser del TIPO MAS GRANDE.
+  - promedio = (acumulador / 5f)    -> Acompañado a un entero individual con la letra "f" ya lo reconoce como FLOTANTE y no como en el caso anterior que tomaba "double".
+  - promedio = (acumulador / (float)i);     ->Ejemplo para castear la "i" y poder realizar la division que devuelva FLOTANTE.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
