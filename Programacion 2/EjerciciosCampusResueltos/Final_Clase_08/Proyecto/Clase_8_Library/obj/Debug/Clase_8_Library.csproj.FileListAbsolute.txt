@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\bin\Debug\Clase_8_Library.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\bin\Debug\Clase_8_Library.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\obj\Debug\Clase_8_Library.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\obj\Debug\Clase_8_Library.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\obj\Debug\Clase_8_Library.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8_Library\obj\Debug\Clase_8_Library.pdb

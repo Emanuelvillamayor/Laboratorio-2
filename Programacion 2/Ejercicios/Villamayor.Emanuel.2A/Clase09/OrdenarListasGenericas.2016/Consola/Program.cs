@@ -29,6 +29,7 @@ namespace Consola
 
             Console.WriteLine("Lista ordenada sólo por apellido");
             lista.Sort(Persona.OredenaPersonasPorApellido);
+            
             Console.WriteLine(Persona.MostrarLista(lista));
 
             Console.WriteLine("Lista ordenada sólo por dni");

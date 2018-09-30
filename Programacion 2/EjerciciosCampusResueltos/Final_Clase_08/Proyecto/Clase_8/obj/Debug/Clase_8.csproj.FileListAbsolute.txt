@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\bin\Debug\Clase_8.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\bin\Debug\Clase_8.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\bin\Debug\Clase_8.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\bin\Debug\Clase_8_Library.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\bin\Debug\Clase_8_Library.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.frmEmpleado.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.frmEmpresa.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.Properties.Resources.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.csproj.CopyComplete
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\EjerciciosCampusResueltos\Final_Clase_08\Proyecto\Clase_8\obj\Debug\Clase_8.pdb
