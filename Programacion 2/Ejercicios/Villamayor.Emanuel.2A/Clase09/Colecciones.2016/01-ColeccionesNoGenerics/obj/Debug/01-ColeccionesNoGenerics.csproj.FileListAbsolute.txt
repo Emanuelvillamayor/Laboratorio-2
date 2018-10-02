@@ -4,3 +4,10 @@ D:\CSharp\2016\###Segundo Cuatri\Colecciones.2016\01-ColeccionesNoGenerics\bin\D
 D:\CSharp\2016\###Segundo Cuatri\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.csprojResolveAssemblyReference.cache
 D:\CSharp\2016\###Segundo Cuatri\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.exe
 D:\CSharp\2016\###Segundo Cuatri\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\bin\Debug\01-ColeccionesNoGenerics.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\bin\Debug\01-ColeccionesNoGenerics.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\bin\Debug\01-ColeccionesNoGenerics.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase09\Colecciones.2016\01-ColeccionesNoGenerics\obj\Debug\01-ColeccionesNoGenerics.pdb

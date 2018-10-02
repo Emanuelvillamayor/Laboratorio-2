@@ -16,6 +16,8 @@ namespace Clase08
         //groupbox contenedeor de otros controles y tiene titulo
         //texbox y los dos botones meterlos en el groupbox y que quede casi ocupando todo el gb
         PaletaColleccion _miPaleta;
+        FrmTempera temp = new FrmTempera();
+
         
 
         public Form1()
@@ -25,7 +27,9 @@ namespace Clase08
             this.gb1.Text = "Paleta de Colores";
             this.txb1.Multiline = true; //permite abritlo mas paraque sea un cuadrado
             this.btn1.Text = "+";
-            this.btn2.Text = "-";          
+            this.btn2.Text = "-";
+            temp.Show(this);
+            
         }
 
         private void agregarPaletaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,12 +70,13 @@ namespace Clase08
             }
             seleccionado += " "+ indice.ToString();
             MessageBox.Show(seleccionado);
-
+            
            
             FrmTempera frmtemp = new FrmTempera(_miPaleta[indice]);  //utilizo la propiedad del INDEXADOR
             DialogResult rta = frmtemp.ShowDialog();
             if(rta==DialogResult.OK)
             {
+               
                 this._miPaleta -= frmtemp.MiTempera;
                 this.txb1.Text = (string)_miPaleta;
             }

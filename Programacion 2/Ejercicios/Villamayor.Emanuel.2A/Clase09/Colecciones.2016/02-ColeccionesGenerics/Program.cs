@@ -70,6 +70,9 @@ namespace _02_ColeccionesGenerics
             Console.WriteLine("******************************");
             Console.ReadLine();
 
+
+            
+
             //DECLARO E INSTANCIO UNA LISTA GENERICA DE PERSONA
             List<Persona> lista = new List<Persona>();
 
