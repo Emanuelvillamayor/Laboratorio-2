@@ -56,7 +56,8 @@ namespace Ejercicio29
 
         public float GetPromedioGoles()
         {
-            return this._partidosJugados  / (float)this._totalGoles;
+            this._promedioGoles= this._partidosJugados / (float)this._totalGoles;
+            return this._promedioGoles;
         }
         #endregion
 

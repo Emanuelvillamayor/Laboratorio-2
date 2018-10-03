@@ -90,8 +90,7 @@ namespace _02_ColeccionesGenerics
             Console.WriteLine("Recorro la colección con un for each.");
             Console.ReadLine();
 
-            Console.WriteLine("Cantidad de elementos en la colección {0}.",
-                                lista.Count);
+            Console.WriteLine("Cantidad de elementos en la colección {0}.", lista.Count);
 
             Console.ReadLine();
 
