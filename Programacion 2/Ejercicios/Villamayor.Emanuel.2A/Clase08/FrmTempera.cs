@@ -58,6 +58,9 @@ namespace Clase08
         public FrmTempera(Tempera temp) : this()
         {
             _mitempera = temp;
+            this.cbxColor.SelectedItem = temp.GetColor;
+            this.tbxCantidad.Text = ""+(sbyte)temp;
+            this.tbxMarca.Text = temp.GetMarca;
         }
     
         

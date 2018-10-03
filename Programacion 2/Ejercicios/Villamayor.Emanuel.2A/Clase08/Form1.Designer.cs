@@ -36,6 +36,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarPaletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.gb1.SuspendLayout();
             this.ms1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // gb1
             // 
+            this.gb1.Controls.Add(this.btnOrdenar);
             this.gb1.Controls.Add(this.btn1);
             this.gb1.Controls.Add(this.btn2);
             this.gb1.Controls.Add(this.txb1);
@@ -112,6 +114,16 @@
             this.agregarPaletaToolStripMenuItem.Text = "Agregar Paleta";
             this.agregarPaletaToolStripMenuItem.Click += new System.EventHandler(this.agregarPaletaToolStripMenuItem_Click);
             // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(331, 248);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
+            this.btnOrdenar.TabIndex = 4;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarPaletaToolStripMenuItem;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 

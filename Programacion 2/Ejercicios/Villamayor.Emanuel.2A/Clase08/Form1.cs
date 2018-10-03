@@ -16,7 +16,7 @@ namespace Clase08
         //groupbox contenedeor de otros controles y tiene titulo
         //texbox y los dos botones meterlos en el groupbox y que quede casi ocupando todo el gb
         PaletaColleccion _miPaleta;
-        FrmTempera temp = new FrmTempera();
+        
 
         
 
@@ -28,7 +28,7 @@ namespace Clase08
             this.txb1.Multiline = true; //permite abritlo mas paraque sea un cuadrado
             this.btn1.Text = "+";
             this.btn2.Text = "-";
-            temp.Show(this);
+          
             
         }
 
@@ -61,7 +61,7 @@ namespace Clase08
 
             foreach(string item in todoText)
              {
-                if(item==seleccionado)
+                if(item==seleccionado && item !="-1")
                 {
                    indice = i;
                    break;                  
@@ -81,6 +81,11 @@ namespace Clase08
                 this.txb1.Text = (string)_miPaleta;
             }
 
+
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
 
         }
 

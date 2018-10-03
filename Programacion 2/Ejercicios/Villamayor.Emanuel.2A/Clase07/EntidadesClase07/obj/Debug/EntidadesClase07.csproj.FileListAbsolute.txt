@@ -9,3 +9,9 @@ C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.dll
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.pdb
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\bin\Debug\EntidadesClase07.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\bin\Debug\EntidadesClase07.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase07\EntidadesClase07\obj\Debug\EntidadesClase07.pdb

@@ -14,10 +14,23 @@ namespace EntidadesClase07
         private ConsoleColor _color;
         private string _marca;
 
-        public sbyte MyProperty
+        public sbyte GetCantidad
         {
             get
-                ;
+            {
+                return this._cantidad;
+            }
+                
+        }
+
+        public ConsoleColor GetColor
+        {
+            get { return this._color; }
+        }
+
+        public string  GetMarca
+        {
+            get { return this._marca; }
         }
         #endregion
 

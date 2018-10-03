@@ -66,9 +66,6 @@ namespace Ejercicio30
                 Console.WriteLine(c1.MostrarDatos());
             }
 
-
-
-
             Console.ReadLine();
 
 
