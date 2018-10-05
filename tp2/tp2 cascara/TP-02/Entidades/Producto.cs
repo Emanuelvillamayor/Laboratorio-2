@@ -43,9 +43,9 @@ public static explicit operator string(Producto p)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CODIGO DE BARRAS: {0}\r\n"+ p.codigoDeBarras);
-            sb.AppendLine("MARCA          : {0}\r\n"+ p.marca.ToString());
-            sb.AppendLine("COLOR EMPAQUE  : {0}\r\n"+ p.colorPrimarioEmpaque.ToString());
+            sb.AppendFormat("CODIGO DE BARRAS: {0}\r\n", p.codigoDeBarras);
+            sb.AppendFormat("MARCA          : {0}\r\n", p.marca.ToString());
+            sb.AppendFormat("COLOR EMPAQUE  : {0}\r\n", p.colorPrimarioEmpaque.ToString());
             sb.AppendLine("---------------------");
 
             return sb.ToString();

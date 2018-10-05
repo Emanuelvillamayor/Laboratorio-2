@@ -29,7 +29,7 @@ namespace Entidades_2018
 
             sb.AppendLine("SNACKS");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine("CALORIAS: {0}\r\n" + this.CantidadCalorias);
+            sb.AppendFormat("CALORIAS: {0}" , this.CantidadCalorias);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

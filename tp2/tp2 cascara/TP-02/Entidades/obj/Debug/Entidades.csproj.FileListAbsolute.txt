@@ -15,3 +15,9 @@ D:\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.csproj
 D:\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.dll
 D:\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\tp2\tp2 cascara\TP-02\Entidades\obj\Debug\Entidades.pdb
