@@ -20,15 +20,6 @@ namespace Entidades_2018
         /// <param name="patente"></param>
         /// <param name="color"></param>
         /// 
-        //public Leche(EMarca marca, string patente, ConsoleColor color) : base(patente, marca, color)
-        //{           
-        //}
-
-        //public Leche(EMarca marca, string patente, ConsoleColor color,ETipo tipo) :this(marca,patente,color)
-        //{
-        //    this.tipo = tipo;
-        //}
-
         public Leche(EMarca marca, string patente, ConsoleColor color) :this(marca,patente, color,ETipo.Entera)
         {
 
@@ -60,7 +51,7 @@ namespace Entidades_2018
             sb.AppendLine("LECHE");
             sb.AppendLine(base.Mostrar());
             sb.AppendFormat("CALORIAS: {0}", this.CantidadCalorias);
-            sb.AppendFormat("TIPO {0}: \r\n" , this.tipo);
+            sb.AppendFormat("TIPO: {0} \r\n" , this.tipo);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 
