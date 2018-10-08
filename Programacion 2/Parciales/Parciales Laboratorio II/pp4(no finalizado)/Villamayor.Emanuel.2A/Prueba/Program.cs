@@ -54,6 +54,44 @@ namespace Prueba
             Console.WriteLine(p1 == p1); //comparo dos iguales
 
             Console.ReadLine();
+            Console.Clear();
+
+            //--------------CABALLOS----------------
+
+            Console.WriteLine("Caballos \r\n");
+
+            Caballo c1 = new Caballo("Jorge", 50);
+            Caballo c2 = new Caballo("Lusito", 20);
+
+            Console.WriteLine(c1.MostrarCaballo());
+
+            Console.WriteLine(c2.MostrarCaballo());
+
+            Console.WriteLine(c1 == c2);
+
+            Console.WriteLine(c1 != c2);
+
+            Console.WriteLine(c1 == c1); //comparo dos iguales
+
+
+            Console.ReadLine();
+            Console.Clear();
+
+            Carrera car1 = new Carrera(3);
+
+            car1 += c1;
+            car1 += c2;
+            car1 += c1; //intento agregar uno igual
+            car1 += p2;
+            car1 += p1; //intento agregar uno de mas
+
+           
+            Console.WriteLine(car1 == c2);
+
+
+
+
+
         }
     }
 }

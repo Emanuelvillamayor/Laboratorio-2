@@ -69,7 +69,6 @@ namespace Entidades
         }
         #endregion
 
-
         #region Enumerados
         public enum Razas
         {

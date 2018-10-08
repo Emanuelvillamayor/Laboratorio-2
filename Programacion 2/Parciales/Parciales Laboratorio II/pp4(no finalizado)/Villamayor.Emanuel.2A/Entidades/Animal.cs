@@ -90,7 +90,7 @@ namespace Entidades
         
             sb.AppendFormat("Cantidad de patas : {0}\n", this.CantidadPatas);
             sb.AppendFormat("Velocidad Maxima : {0}\n", this.VelocidadMaxima);
-            sb.AppendFormat("Distancia Recorrida: {0}", this.DistanciaRecorrida);
+            sb.AppendFormat("Distancia Recorrida: {0}\n", this.DistanciaRecorrida);
 
             return sb.ToString();
 
