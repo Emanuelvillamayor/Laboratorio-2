@@ -36,7 +36,6 @@ namespace Entidades
 
         #endregion
 
-
         #region Constructores
 
         public Comensal(string nombre , string apellido)

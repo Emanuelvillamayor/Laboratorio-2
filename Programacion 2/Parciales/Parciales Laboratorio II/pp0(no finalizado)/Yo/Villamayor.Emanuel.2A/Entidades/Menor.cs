@@ -14,7 +14,6 @@ namespace Entidades
 
         #endregion
 
-
         #region Propiedades
 
         public eMenu Menu
@@ -55,8 +54,6 @@ namespace Entidades
 
         #endregion
 
-
-
         #region SobrecargaOperadores
 
         public static bool operator ==(Menor m1 , Menor m2)
@@ -78,7 +75,6 @@ namespace Entidades
 
         #endregion
 
-
         #region Sobreescritura
 
         public override string ToString()
@@ -89,7 +85,6 @@ namespace Entidades
         //FALTA EL EQUALS
 
         #endregion
-
 
         #region Enumerado
 

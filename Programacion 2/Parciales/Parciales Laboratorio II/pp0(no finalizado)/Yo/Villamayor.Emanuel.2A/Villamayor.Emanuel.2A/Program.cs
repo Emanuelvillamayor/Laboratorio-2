@@ -13,7 +13,7 @@ namespace Villamayor.Emanuel._2A
         {
             Menor men = new Menor("Lucas", "Villalba",Menor.eMenu.Milanesa);
 
-            Console.WriteLine( men.Mostrar());
+            Console.WriteLine( men.ToString());
 
 
             Mayor may = new Mayor("Pepe", "Mujica", Mayor.eBebidas.Gaseosa);
