@@ -44,6 +44,53 @@ namespace Entidades
         }
         #endregion
 
+        #region Metodos
+
+        public override string Mostrar()
+        {
+
+            return string.Format("{0} {1} Menor", base.Mostrar(), this.Menu);
+
+        }
+
+        #endregion
+
+
+
+        #region SobrecargaOperadores
+
+        public static bool operator ==(Menor m1 , Menor m2)
+        {
+            bool retorno = false;
+
+            if(m1.Nombre==m2.Nombre && m1.Apellido == m2.Apellido && m1.Menu==m2.Menu)
+            {
+                retorno = true;
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Menor m1, Menor m2)
+        {
+            return !(m1 == m2);
+        }
+
+        #endregion
+
+
+        #region Sobreescritura
+
+        public override string ToString()
+        {
+            return this.Mostrar();
+        }
+
+        //FALTA EL EQUALS
+
+        #endregion
+
+
         #region Enumerado
 
         public enum eMenu
