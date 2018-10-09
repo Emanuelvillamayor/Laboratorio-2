@@ -35,6 +35,16 @@ namespace Entidades
 
         #endregion
 
+        #region Constructores
+
+        public Producto(int codigoBarra, EMarcaProducto marca,float precio)
+        {
+            this._codigoBarra = codigoBarra;
+            this._marca = marca;
+            this._precio = precio;
+        }
+
+        #endregion
 
         #region Metodos
 
@@ -75,6 +85,25 @@ namespace Entidades
             return !(p1 == m);
         }
 
+       public static bool operator ==(Producto p1, Producto p2)
+        {
+            bool retorno = false;
+
+            if(p1.Equals(p2))
+            {
+                if(p1._marca==p2._marca && p1._codigoBarra == p2._codigoBarra)
+                {
+                    retorno = true;
+                }
+            }
+
+            return retorno;
+        }
+
+        public static bool operator !=(Producto p1, Producto p2)
+        {
+            return !(p1 == p2);
+        }
 
         public static explicit operator int (Producto p)
         {
@@ -85,7 +114,16 @@ namespace Entidades
         {
             return Producto.MostrarProducto(p);
         }
+
         #endregion
+
+        public override bool Equals(object obj)
+        {
+            
+            return this.GetType() == obj.GetType();
+
+        }
+
 
         public enum EMarcaProducto
         {

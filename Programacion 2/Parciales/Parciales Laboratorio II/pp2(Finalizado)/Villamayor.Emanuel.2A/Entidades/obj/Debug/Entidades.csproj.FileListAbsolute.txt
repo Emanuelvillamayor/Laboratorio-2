@@ -4,3 +4,9 @@ C:\Users\User\source\repos\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.c
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.dll
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\obj\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\bin\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Entidades\bin\Debug\Entidades.pdb

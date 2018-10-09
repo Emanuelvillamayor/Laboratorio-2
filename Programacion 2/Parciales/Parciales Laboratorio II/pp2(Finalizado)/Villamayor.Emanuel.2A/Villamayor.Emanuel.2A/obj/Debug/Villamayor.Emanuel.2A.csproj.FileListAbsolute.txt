@@ -8,3 +8,13 @@ C:\Users\User\source\repos\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.csproj.CopyComplete
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.exe
 C:\Users\User\source\repos\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\bin\Debug\Villamayor.Emanuel.2A.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\bin\Debug\Villamayor.Emanuel.2A.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\bin\Debug\Villamayor.Emanuel.2A.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\bin\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\bin\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.csproj.CopyComplete
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Parciales\Parciales Laboratorio II\pp2(Finalizado)\Villamayor.Emanuel.2A\Villamayor.Emanuel.2A\obj\Debug\Villamayor.Emanuel.2A.pdb

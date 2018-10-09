@@ -97,7 +97,20 @@ namespace Entidades
         {
             return this.Ficha();
         }
-      
+
+        public override bool Equals(object obj)
+        {
+            bool retorno = false;
+              if (obj is Perro)
+              {
+                  if (this == (Perro)obj)
+                  {
+                      retorno = true;
+                  }
+              }
+          
+            return retorno;
+        }
 
         #endregion
     }

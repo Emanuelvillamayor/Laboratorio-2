@@ -28,7 +28,6 @@ namespace Entidades
         }
         #endregion
 
-
         #region Operadores
 
         public static bool operator ==(Gato g1 , Gato g2)
@@ -55,6 +54,18 @@ namespace Entidades
             return this.Ficha();
         }
 
+        public override bool Equals(object obj)
+        {
+            bool retorno = false;
+            if (obj is Gato)
+            {
+                if(this == (Gato)obj)
+                {
+                    retorno = true;
+                }
+            }
+            return retorno;
+        }
 
         #endregion
 

@@ -11,7 +11,7 @@ namespace Entidades
         #region Atributos
 
         protected ESaborJugo _sabor;
-        protected bool DeConsumo;
+        protected static bool DeConsumo;
 
         #endregion
 
@@ -28,10 +28,26 @@ namespace Entidades
 
 
         #region Constructores
-        private Jugo
+       static Jugo()
+        {
+            Jugo.DeConsumo = true;
+        }
 
+        public Jugo(int codigoBarra,float precio , EMarcaProducto marca,ESaborJugo sabor) :base(codigoBarra,marca,precio)
+        {
+            this._sabor = sabor;
+        }
         #endregion
 
+        #region Metodos
+        private string MostrarJugo()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb += base.;
+
+        }
+
+        #endregion
 
 
         public enum ESaborJugo
