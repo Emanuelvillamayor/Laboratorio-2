@@ -40,6 +40,7 @@ namespace Entidades
             foreach(Animal item in c._animales)
             {
                 sb.AppendLine(item.MostrarDatos());
+                
             }
 
             return sb.ToString();
@@ -47,6 +48,7 @@ namespace Entidades
 
 
         #endregion
+
         #region SobrecargaOperadores
 
         public static bool operator ==(Carrera c, Animal a)

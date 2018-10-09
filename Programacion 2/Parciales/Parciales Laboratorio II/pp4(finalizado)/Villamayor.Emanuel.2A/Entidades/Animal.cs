@@ -69,7 +69,7 @@ namespace Entidades
         #endregion
 
         #region Constructores
-        static Animal()
+         static Animal()
         {
             Animal._distanciaRecorrida = new Random();
         }
