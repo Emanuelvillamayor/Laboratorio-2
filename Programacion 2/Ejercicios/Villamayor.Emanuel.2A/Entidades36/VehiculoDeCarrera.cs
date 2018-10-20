@@ -110,5 +110,25 @@ namespace Entidades36
         }
 
         #endregion
+
+        #region SobrecargaOperadores
+
+        public static bool operator == ( VehiculoDeCarrera v1 , VehiculoDeCarrera v2)
+        {
+            bool retorno = false;
+
+            if(v1._numero== v2._numero && v1._escuderia== v2._escuderia)
+            {
+                retorno = true;
+            }
+            return retorno;
+        }
+
+        public static bool operator !=(VehiculoDeCarrera v1, VehiculoDeCarrera v2)
+        {
+            return !(v1 == v2);
+        }
+
+        #endregion
     }
 }

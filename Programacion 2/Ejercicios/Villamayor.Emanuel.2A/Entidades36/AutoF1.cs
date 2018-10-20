@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades36
 {
-    class AutoF1 : VehiculoDeCarrera
+   public class AutoF1 : VehiculoDeCarrera
     {
         #region Atributos
 
@@ -63,7 +63,7 @@ namespace Entidades36
         {
             bool retorno = false;
 
-            if (a1.Numero == a2.Numero && a1.Escuderia == a2.Escuderia)
+            if ((VehiculoDeCarrera)a1 == (VehiculoDeCarrera)a2 && a1.CaballosDeFuerza== a2.CaballosDeFuerza)
                 retorno = true;
 
 
