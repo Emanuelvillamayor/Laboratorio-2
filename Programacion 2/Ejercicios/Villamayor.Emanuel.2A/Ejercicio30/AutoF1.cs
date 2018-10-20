@@ -63,7 +63,7 @@ namespace Ejercicio30
             retorno += "En Competencia: " + this._enCompetencia.ToString()+ "\n";
             retorno += "Cantidad Combustible: " + this._cantidadCombustible.ToString() + "\n";
             retorno += "Vueltas Restantes : " + this._vueltasRestantes.ToString();
-
+            retorno += "Escuderia : " + this._ecuderia.ToString();
             return retorno;
         }
 

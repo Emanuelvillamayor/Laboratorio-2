@@ -19,6 +19,11 @@ namespace Ejercicio29
 
         #endregion
 
+        #region Propiedades
+
+
+        #endregion
+
         #region Constructores
         private Jugador() 
         {
