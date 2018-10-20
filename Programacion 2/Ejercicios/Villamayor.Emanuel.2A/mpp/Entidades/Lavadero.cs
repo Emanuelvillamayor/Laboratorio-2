@@ -44,6 +44,7 @@ namespace Entidades
         }
 
         #endregion
+
         #region Constructores
 
         static Lavadero()

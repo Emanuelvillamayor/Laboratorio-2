@@ -157,6 +157,7 @@ namespace Entidades36
             
             if(c!=v)
             {
+               
                 if (c._competidores.Count + 1 <= c._cantidadCompetidores)
                 {
                     v.EnCompetencia = true;
