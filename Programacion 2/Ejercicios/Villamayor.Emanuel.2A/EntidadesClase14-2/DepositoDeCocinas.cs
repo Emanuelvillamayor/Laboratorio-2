@@ -41,7 +41,7 @@ namespace EntidadesClase14_2
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("Capacidad maxima: {0}\r\n", this._capacidadMaxima);
-            sb.AppendLine("Listado de Cocinas");
+            sb.AppendLine("Listado de Cocinas:");
             
             foreach(Cocina item in this._lista)
             {
@@ -163,8 +163,6 @@ namespace EntidadesClase14_2
 
             return retorno;
         }
-
-  
-
+       
     }
 }
