@@ -4328,19 +4328,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\alumno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Manu\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\Entidades(07).csproj",
+      "projectUniqueName": "D:\\Manu\\New Lab\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\Entidades(07).csproj",
       "projectName": "Entidades(07)",
-      "projectPath": "C:\\Users\\User\\Desktop\\Manu\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\Entidades(07).csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Manu\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\obj\\",
+      "projectPath": "D:\\Manu\\New Lab\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\Entidades(07).csproj",
+      "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
+      "outputPath": "D:\\Manu\\New Lab\\Laboratorio-2\\Programacion 2\\Ejercicios\\Villamayor.Emanuel.2A\\Clase07\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4354,6 +4354,11 @@
         "netstandard1.6": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {

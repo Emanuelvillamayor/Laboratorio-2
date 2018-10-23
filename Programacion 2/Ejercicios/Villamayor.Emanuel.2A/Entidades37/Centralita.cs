@@ -39,18 +39,39 @@ namespace Entidades37
         {
             float retorno = 0;
 
-         
-          /*  if(tipo == ETipoLlamada.Local)
+            foreach(Llamada item in this._listaDeLlamadas)
             {
-                foreach(Local item in this._listaDeLlamadas)
+                switch (tipo)
                 {
-                    if (item is Local)
-                    {
-                        retorno += item.CostoLlamda;
-                    }
-                }
-            }*/
+                    case ETipoLlamada.Local:
+                        if(item is Local)
+                        {
+                            retorno += ((Local)item).CostoLlamda;
+                        }
+                        break;
 
+                    case ETipoLlamada.Provincial:
+
+                        if (item is Provincial)
+                        {
+                            retorno += ((Provincial)item).CostoLlamada;
+                        }
+                        break;
+
+                    default:
+                        if(item is Local)
+                        {
+                            retorno += ((Local)item).CostoLlamda;
+                        }
+
+                        if(item is Provincial)
+                        {
+                            retorno += ((Provincial)item).CostoLlamada;
+                        }
+                        break;
+                       
+                }             
+            }
     return retorno;
         }
 
