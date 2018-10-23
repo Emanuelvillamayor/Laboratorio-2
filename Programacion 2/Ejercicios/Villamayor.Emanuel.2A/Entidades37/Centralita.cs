@@ -17,7 +17,31 @@ namespace Entidades37
 
         #region Propiedades
 
+        public float GananciaPorLocal
+        {
+            get
+            {
+                return this.CalcularGanancia(ETipoLlamada.Local);
+            }
 
+        }
+
+        public float GananciaPorProvincial
+        {
+            get
+            {
+                return this.CalcularGanancia(ETipoLlamada.Provincial);
+
+            }
+        }
+
+        public float GananciaPorTotal
+        {
+            get
+            {
+                return this.CalcularGanancia(ETipoLlamada.Todas);
+            }
+        }
         #endregion
 
         #region Constructores
@@ -75,6 +99,23 @@ namespace Entidades37
     return retorno;
         }
 
+        public void OrdenarLlamadas()
+        {
+            this._listaDeLlamadas.Sort(Llamada.OrdenarPorDuracion);
+        }
+
+        //public string Mostrar()
+        //{
+        //    StringBuilder sb = new StringBuilder();
+
+        //    sb.AppendFormat("Razon Social: {0}\n", this.razonSocial);
+
+        //    sb.AppendFormat("Ganancia Total: {0}\n", this.GananciaPorTotal);
+        //    sb.AppendFormat("Ganancia llamadas Locales: {0}\n", this.GananciaPorLocal);
+        //    sb.AppendFormat("Ganancia llamadas Provinciales: {0}\n", this.GananciaPorProvincial);
+
+
+        //}
         #endregion
 
     }

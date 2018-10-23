@@ -27,7 +27,22 @@ namespace TestClase14_2
                 Console.WriteLine("No se pudo remover el item!!!");
             }
             Console.WriteLine(dc);
+
+            // if(dc.Guardar("D:\\MisDocumentos\\Cocinas.txt")) //agregar dos barras porque sino lo toma como secuencia de escape o sino:
+            if (dc.Guardar(@"D:\Manu\Cocinas.txt")) //el arroba lo que hace es decirle que va a ser todo literal que no tiene secuencia de escape
+            {
+                Console.WriteLine("Guardado");
+            }
+
+            if (dc.Recuperar(@"D:\Manu\Cocinas.txt")) //leo el archivo que cree
+            {
+                Console.WriteLine("Leido");
+            }
+
+
             Console.ReadLine();
+
+
 
         }
     }

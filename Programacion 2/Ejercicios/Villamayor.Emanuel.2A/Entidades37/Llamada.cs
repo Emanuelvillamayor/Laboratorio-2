@@ -70,7 +70,7 @@ namespace Entidades37
         }
 
 
-        public int OrdenarPorDuracion (Llamada l1 , Llamada l2)
+        public static int OrdenarPorDuracion (Llamada l1 , Llamada l2)
         {
             return String.Compare(l1.duracion.ToString(), l2.duracion.ToString());
         }

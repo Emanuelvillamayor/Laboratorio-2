@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO; //using para los archivos
 
 namespace EntidadesClase14_2
 {
@@ -39,7 +40,7 @@ namespace EntidadesClase14_2
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Capacidad maxima: {0}\n", this._capacidadMaxima);
+            sb.AppendFormat("Capacidad maxima: {0}\r\n", this._capacidadMaxima);
             sb.AppendLine("Listado de Cocinas");
             
             foreach(Cocina item in this._lista)
@@ -48,6 +49,68 @@ namespace EntidadesClase14_2
             }
 
             return sb.ToString();
+        }
+
+        //AGREGO METODOS QUE NO ESTAN EN EL PDF
+
+       //Guardar (string) : bool 
+       //el string que recibe es el path (ubicacion) donde guardar el archivo
+       //Guarde el contenido de deposito de cocina + cada uno de los detalles de cada una de las cocinas que contenga , llama al to string
+       //de cada una de las cocinas , todo esto se va a guardar en un archivo de texto
+       //true si se pudo guardar el archivo 
+       //false si no pudo
+       //tiene que estar dentro de un try catch , si entra al cath retorno false y si solo al try retorno true
+       //utilizamos streamriter para escrbiri en un archivo
+         public bool Guardar(string path)
+        {
+            bool retorno = true;
+
+            try
+            {
+                //V1
+                //StreamWriter sm = new StreamWriter(path, false);
+                //sm.WriteLine(this.ToString());
+                //sm.Close();
+
+                //V2
+                using (StreamWriter sm = new StreamWriter(path, false))
+                {
+                    sm.WriteLine(this.ToString());
+                }
+
+                 retorno = true;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return retorno;
+        }
+
+        //Recuperar(string):bool
+        //string es el path 
+        //Va a recuperar el archivo, es decir leer la informacion 
+        //streamReader sirve para leer
+        //si el archviode texto que le indico no existe , genera excepcion
+        //si recuperamos hacemos el ReadToEnd
+
+        public bool Recuperar(string path)
+        {
+            bool retorno = false;
+            try
+            {
+                using (StreamReader sr = new StreamReader(path))
+                {
+    
+                    Console.WriteLine(sr.ReadToEnd());
+                    retorno = true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return retorno;
         }
 
         #endregion
