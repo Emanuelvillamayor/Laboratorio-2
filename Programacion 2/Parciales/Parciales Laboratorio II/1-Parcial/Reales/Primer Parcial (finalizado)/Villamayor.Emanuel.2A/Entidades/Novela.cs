@@ -8,14 +8,23 @@ namespace Entidades
 {
     public class Novela : Libro
     {
+        #region Atributos
+
         public EGenero genero;
 
-       
-            public  Novela (string titulo,float precio , Autor autor,EGenero genero) :base(titulo,autor,precio)
+        #endregion
+
+        #region Constructores
+
+        public Novela (string titulo,float precio , Autor autor,EGenero genero) :base(titulo,autor,precio)
             {
               this.genero = genero;
             }
-       
+
+        #endregion
+
+        #region Metodos
+
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -26,6 +35,9 @@ namespace Entidades
             return sb.ToString();
         }
 
+        #endregion
+
+        #region SobrecargaOperadores
 
         public static bool operator ==(Novela a , Novela b)
         {
@@ -49,5 +61,7 @@ namespace Entidades
         {
             return n._precio;
         }
+
+        #endregion
     }
 }

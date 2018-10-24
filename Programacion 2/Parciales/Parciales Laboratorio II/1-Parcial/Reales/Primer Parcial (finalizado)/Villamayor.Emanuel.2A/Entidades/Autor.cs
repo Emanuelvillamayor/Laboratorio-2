@@ -8,15 +8,24 @@ namespace Entidades
 {
     public class Autor
     {
+        #region Atributos
+
         private string _apellido;
         private string _nombre;
 
-        public  Autor(string nombre , string apellido)
+        #endregion
+
+        #region Constructor
+
+        public Autor(string nombre , string apellido)
         {
             this._nombre = nombre;
             this._apellido = apellido;
         }
-        
+
+        #endregion
+
+        #region SobrecargaOperadores
 
         public static bool operator  ==(Autor a , Autor b)
         {
@@ -38,8 +47,10 @@ namespace Entidades
 
         public static implicit operator string(Autor a)
         {
-            return string.Format("{0} {1}\n", a._nombre, a._apellido);
+            return string.Format("{0} - {1}", a._nombre, a._apellido);
         }
+
+        #endregion
 
 
 

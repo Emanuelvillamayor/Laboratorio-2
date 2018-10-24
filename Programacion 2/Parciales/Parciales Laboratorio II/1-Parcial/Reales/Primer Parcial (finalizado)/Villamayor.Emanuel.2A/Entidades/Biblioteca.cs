@@ -8,15 +8,20 @@ namespace Entidades
 {
    public class Biblioteca
     {
+        #region Atributos
+
         private int _capacidad;
         private List<Libro> _libros;
+
+        #endregion
+
+        #region Propiedades
 
         public double PrecioDeManuales
         {
             get
             {
                 return  this.ObtenerPrecio(ELibro.Manual);
-
 
             }
         }
@@ -39,6 +44,9 @@ namespace Entidades
             }
         }
 
+        #endregion
+
+        #region Constructores
 
         private Biblioteca()
         {
@@ -49,6 +57,10 @@ namespace Entidades
             this._capacidad = capacidad;
         }
 
+        #endregion
+
+        #region Metodos
+
         public static string Mostrar(Biblioteca e)
         {
             StringBuilder sb = new StringBuilder();            
@@ -58,7 +70,7 @@ namespace Entidades
             sb.AppendFormat("Total: $ {0:#.##}\n", e.PrecioTotal);
             sb.AppendLine("****************************************");
             sb.AppendLine("Listado de Libros");
-            sb.AppendFormat("****************************************\n");
+            sb.AppendFormat("****************************************");
 
             foreach (Libro item in e._libros)
             {
@@ -73,12 +85,54 @@ namespace Entidades
                 }
             }
 
-            // sb.AppendLine((string)item);
-        
-
             return sb.ToString();
-
         }
+
+
+        private double ObtenerPrecio(ELibro tipolibro)
+        {
+            double acum = 0;
+            foreach (Libro item in this._libros)
+            {
+
+                switch (tipolibro)
+                {
+                    case ELibro.Novela:
+                        if (item is Novela)
+                        {
+                            acum += ((Novela)item);
+                        }
+
+                        break;
+
+                    case ELibro.Manual:
+                        if (item is Manual)
+                        {
+                            acum += ((Manual)item);
+                        }
+                        break;
+
+                    default:
+
+                        if (item is Manual)
+                        {
+                            acum += ((Manual)item);
+                        }
+                        if (item is Novela)
+                        {
+                            acum += ((Novela)item);
+                        }
+
+                        break;
+                }
+
+            }
+            return acum;
+        }
+
+        #endregion
+
+        #region SobrecargaOperadores
 
         public static implicit operator Biblioteca(int capacidad)
         {
@@ -118,60 +172,30 @@ namespace Entidades
             return !(b == l);
         }
 
-        public static Biblioteca operator +(Biblioteca b , Libro l)
+        public static Biblioteca operator +(Biblioteca b, Libro l)
         {
-            if(b!=l && b._libros.Count+1<=b._capacidad)
+            if (b == l)
             {
-                b._libros.Add(l);
+                Console.WriteLine("El libro ya esta en la biblioteca");
+
             }
             else
             {
-                Console.WriteLine("No queda mas lugar");
-            }
+                if (b._libros.Count + 1 <= b._capacidad)
+                {
+                    b._libros.Add(l);
+                }
+                else
+                {
+                    Console.WriteLine("No hay mas lugar en la biblioteca");
+                }
 
+            }
            return b;
         }
 
-        private  double ObtenerPrecio(ELibro tipolibro)
-        {
-            double acum = 0;
-            foreach(Libro item in this._libros)
-            {
+        #endregion
 
-                switch(tipolibro)
-                {
-                    case ELibro.Novela:
-                        if(item is Novela)
-                        {
-                            acum += ((Novela)item);
-                        }
-
-                        break;
-
-                    case ELibro.Manual:
-                        if (item is Manual)
-                        {
-                            acum += ((Manual)item);
-                        }
-                        break;
-
-                    default:
-
-                        if(item is Manual)
-                        {
-                            acum += ((Manual)item);
-                        }
-                        if(item is Novela)
-                        {
-                            acum += ((Novela)item);
-                        }
-
-                        break;
-                }
-                
-            }
-            return acum;
-        }
         
 
         
