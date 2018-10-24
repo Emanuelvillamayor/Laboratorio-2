@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EntidadesClase15
 {
-    public class Comercial : Avion
+    //ya hereda de avion las interfaces
+    public class Comercial : Avion,IARBA
     {
 
         #region Atributos
@@ -15,13 +16,40 @@ namespace EntidadesClase15
 
         #endregion
 
+        #region Propiedades
+
+        public int CapacidadPasajeros
+        {
+            get
+            {
+                return this._capacidadPasajeros;
+            }
+
+            set
+            {
+                this._capacidadPasajeros = value;
+            }
+        }
+
+        #endregion
+
         #region Constructores
 
         public Comercial(double precio , double  velocidad , int pasajeros): base(precio,velocidad)
         {
-            this._capacidadPasajeros = pasajeros;
+            this._capacidadPasajeros = pasajeros;         
         }
 
         #endregion
+
+        #region Metodos
+
+       double IARBA.CalcularImpuesto()
+        {
+            return this.Precio * 0.25;
+        }
+
+        #endregion
+
     }
 }

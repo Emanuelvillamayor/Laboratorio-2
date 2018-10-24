@@ -15,6 +15,22 @@ namespace EntidadesClase15
 
         #endregion
 
+        #region Propiedades
+
+        public int ValoracionServicioAbordo
+        {
+            get
+            {
+                return this._valoracionServicioAbordo;
+            }
+            set
+            {
+                this._valoracionServicioAbordo = value;
+            }
+        }
+
+        #endregion
+
         #region Constructores
 
         public Privado(double precio, double velocidad, int valoracion) : base(precio,velocidad)

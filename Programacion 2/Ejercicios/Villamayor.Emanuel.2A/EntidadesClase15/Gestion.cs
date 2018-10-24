@@ -13,5 +13,10 @@ namespace EntidadesClase15
             return bienPunible.CalcularImpuesto();
         }
 
+        public static double MostrarImpuestoProvincial(IARBA bienPunible)
+        {
+            return bienPunible.CalcularImpuesto();
+        }
+
     }
 }

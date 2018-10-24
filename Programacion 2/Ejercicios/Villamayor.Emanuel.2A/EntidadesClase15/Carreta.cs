@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntidadesClase15
 {
-  public  class Carreta : Vehiculo
+  public  class Carreta : Vehiculo,IARBA
     {
 
         #region Constructores
@@ -16,12 +16,19 @@ namespace EntidadesClase15
 
         }
 
-        #endregion
-
-        #region Propiedades
-
         
+        #endregion
+
+        #region Metodos
+
+public double CalcularImpuesto()
+        {
+            return this._precio * 0.18;
+        }
+
 
         #endregion
+
+
     }
 }

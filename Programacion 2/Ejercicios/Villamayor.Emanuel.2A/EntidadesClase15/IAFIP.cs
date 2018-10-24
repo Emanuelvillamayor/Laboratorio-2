@@ -8,7 +8,6 @@ namespace EntidadesClase15
 {
    public  interface IAFIP
     {
-        double CalcularImpuesto();
-
+        double CalcularImpuesto();   
     }
 }

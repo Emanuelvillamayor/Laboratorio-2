@@ -6,12 +6,28 @@ using System.Threading.Tasks;
 
 namespace EntidadesClase15
 {
-    public class Avion : Vehiculo, IAFIP
+    public class Avion : Vehiculo, IAFIP,IARBA
     {
 
         #region Atributos
 
         protected double _velocidadMaxima;
+
+        #endregion
+
+        #region Propiedades
+
+        public double VelocidadMaxima
+        {
+            get
+            {
+                return this._velocidadMaxima;
+            }
+            set
+            {
+                this._velocidadMaxima = value;
+            }
+        }
 
         #endregion
 
@@ -31,6 +47,11 @@ namespace EntidadesClase15
     public double CalcularImpuesto()
         {
             return this.Precio * 0.33;
+        }
+
+        double IARBA.CalcularImpuesto()
+        {
+            return this.Precio * 0.27;
         }
 
 
