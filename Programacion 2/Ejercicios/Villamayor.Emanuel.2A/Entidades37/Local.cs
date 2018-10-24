@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades37
 {
-    class Local : Llamada
+    public class Local : Llamada
     {
         #region Atributos
 

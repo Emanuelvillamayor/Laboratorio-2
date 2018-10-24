@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades37
 {
-    class Provincial : Llamada
+   public  class Provincial : Llamada
     {
         #region Atributos
 
@@ -28,14 +28,14 @@ namespace Entidades37
 
         #region Constructores
 
-        public Provincial(EFranja miFranja , Llamada llamada) : base(llamada.Duracion,llamada.NroDestino,llamada.NroOrigen)
+        public Provincial(EFranja miFranja , Llamada llamada) : this(llamada.NroOrigen,miFranja,llamada.Duracion,llamada.NroOrigen)
         {
-            this.franjaHoraria = miFranja;
+            
         }
 
-        public Provincial(string origen , EFranja miFranja, float duracion , string destino): this(miFranja,new Llamada(duracion,destino,origen))
+        public Provincial(string origen , EFranja miFranja, float duracion , string destino): base(duracion,destino,origen)
         {
-
+          this.franjaHoraria = miFranja;
         }
 
         #endregion
