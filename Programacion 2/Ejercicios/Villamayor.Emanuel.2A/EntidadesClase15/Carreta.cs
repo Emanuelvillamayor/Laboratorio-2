@@ -21,11 +21,10 @@ namespace EntidadesClase15
 
         #region Metodos
 
-public double CalcularImpuesto()
+        public double CalcularImpuesto()
         {
             return this._precio * 0.18;
         }
-
 
         #endregion
 
