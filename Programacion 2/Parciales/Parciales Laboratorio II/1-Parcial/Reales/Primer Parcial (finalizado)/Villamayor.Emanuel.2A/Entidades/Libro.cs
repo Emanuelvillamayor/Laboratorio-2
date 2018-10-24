@@ -8,12 +8,17 @@ namespace Entidades
 {
    public class Libro
     {
+        #region Constructores
+
         protected Autor _autor;
         protected int _cantidadDePaginas;
         protected static Random _generadorDePaginas;
         protected float _precio;
         protected string _titulo;
 
+        #endregion
+
+        #region Propiedades
 
         public int CantidadDePaginas
         {
@@ -32,7 +37,12 @@ namespace Entidades
                 return retorno;
             }
         }
-            static Libro()
+
+        #endregion
+
+        #region Constructores
+
+        static Libro()
         {
             Libro._generadorDePaginas = new Random();
         }
@@ -48,18 +58,26 @@ namespace Entidades
             this._titulo = titulo;
             this._autor = autor;
         }
-      
+
+        #endregion
+
+        #region Metodos
+
         private static string Mostrar(Libro l)
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("TITULO: {0}\n", l._titulo);
             sb.AppendFormat("CANTIDAD DE PAGINAS: {0}\n", l.CantidadDePaginas);
-            sb.AppendFormat( l._autor);
+            sb.AppendLine("Autor: "+  l._autor);
             sb.AppendFormat("PRECIO: {0}", l._precio);
 
             return sb.ToString();
         }
+
+        #endregion
+
+        #region SobrecargaOperadores
 
         public static bool operator ==(Libro l1 , Libro l2)
         {
@@ -83,7 +101,7 @@ namespace Entidades
         }
 
 
-        
+        #endregion
 
     }
 }
