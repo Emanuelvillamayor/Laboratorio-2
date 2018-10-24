@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntidadesClase14
+namespace EntidadesClase14_1
 {
-   public class DepositoDeAutos
+    public class DepositoDeAutos
     {
         #region Atributos
 
@@ -29,7 +29,7 @@ namespace EntidadesClase14
 
         public bool Agregar(Auto a)
         {
-   
+
             return this + a;
         }
 
@@ -45,7 +45,7 @@ namespace EntidadesClase14
             sb.AppendFormat("Capaciad maxima: {0}\n", this._capacidadMaxima);
             sb.AppendLine("Listado de Autos:");
 
-            foreach(Auto item in this._lista)
+            foreach (Auto item in this._lista)
             {
                 sb.AppendLine(item.ToString());
             }
@@ -56,14 +56,14 @@ namespace EntidadesClase14
 
         #region SobrecargaOperadores
 
-        public static bool operator +(DepositoDeAutos d , Auto a)
+        public static bool operator +(DepositoDeAutos d, Auto a)
         {
 
             bool retorno = false;
 
             if (d._lista.Count + 1 <= d._capacidadMaxima)
             {
-               d._lista.Add(a);
+                d._lista.Add(a);
                 retorno = true;
             }
 
@@ -78,10 +78,10 @@ namespace EntidadesClase14
 
             tam = this._lista.Count;
 
-            for(i=0;i<tam;i++)
+            for (i = 0; i < tam; i++)
             {
 
-                if(this._lista[i]== a)
+                if (this._lista[i] == a)
                 {
                     retorno = i;
                     break;
@@ -90,9 +90,9 @@ namespace EntidadesClase14
             return retorno;
         }
 
-        public static bool operator - (DepositoDeAutos d , Auto a)
+        public static bool operator -(DepositoDeAutos d, Auto a)
         {
-            
+
             bool retorno = false;
             int indice;
 
@@ -106,9 +106,6 @@ namespace EntidadesClase14
 
             return retorno;
         }
-
-
-
 
         #endregion
 

@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntidadesClase14
+namespace EntidadesClase14_1
 {
-    //agregar uno dentro del otro clase
     public class Auto
     {
         #region Atributos
@@ -52,7 +51,7 @@ namespace EntidadesClase14
         {
             bool retorno = false;
 
-            if(obj is Auto)
+            if (obj is Auto)
             {
                 retorno = this == (Auto)obj;
             }
@@ -69,11 +68,11 @@ namespace EntidadesClase14
 
         #region SobrecargaOperadores
 
-        public static bool operator ==(Auto a , Auto b)
+        public static bool operator ==(Auto a, Auto b)
         {
             bool retorno = false;
 
-            if(a._color == b._color && a._marca==b._marca)
+            if (a._color == b._color && a._marca == b._marca)
             {
                 retorno = true;
             }
@@ -86,7 +85,6 @@ namespace EntidadesClase14
             return !(a == b);
         }
         #endregion
-
 
 
     }

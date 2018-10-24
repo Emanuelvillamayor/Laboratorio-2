@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EntidadesClase14;
+using EntidadesClase14_1;
 namespace TestClase14
 {
     class Program
