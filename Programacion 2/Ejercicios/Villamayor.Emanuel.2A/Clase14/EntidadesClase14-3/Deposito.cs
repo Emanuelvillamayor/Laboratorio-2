@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntidadesClase14_3
 {
-    public class Deposito<T>
+    public class Deposito<T> 
     {
         #region Atributos
 
