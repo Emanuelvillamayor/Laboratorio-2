@@ -123,6 +123,11 @@ namespace Entidades37
             sb.AppendFormat("Ganancia llamadas Locales: {0}\n", this.GananciaPorLocal);
             sb.AppendFormat("Ganancia llamadas Provinciales: {0}\n", this.GananciaPorProvincial);
 
+            foreach (Llamada item in this._listaDeLlamadas)
+            {
+                sb.AppendLine(item.ToString());
+            }
+
             return sb.ToString();
         }
 
