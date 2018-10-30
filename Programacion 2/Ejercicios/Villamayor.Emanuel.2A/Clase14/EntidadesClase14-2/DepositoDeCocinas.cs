@@ -63,7 +63,7 @@ namespace EntidadesClase14_2
        //utilizamos streamriter para escrbiri en un archivo
          public bool Guardar(string path)
         {
-            bool retorno = true;
+            bool retorno = false;
 
             try
             {

@@ -85,3 +85,6 @@ namespace Clase05
 
     }
 }
+//clase estatica dos metodos , parametro string y ambas retorna booleano
+//primer parametro el path y el segundo parametro lo que tengo que escribir y lo que tengo que leer
+//el booleano indica si pudo o no leer
