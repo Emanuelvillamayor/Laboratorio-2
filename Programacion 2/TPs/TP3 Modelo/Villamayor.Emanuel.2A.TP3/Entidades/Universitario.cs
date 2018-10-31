@@ -49,7 +49,8 @@ namespace Entidades
         {
             bool retorno = false;
 
-            if(obj is Universitario)
+          //  if(obj is Universitario && this is Universitario)
+                if (obj is Universitario)
             {
                 retorno = true;
             }

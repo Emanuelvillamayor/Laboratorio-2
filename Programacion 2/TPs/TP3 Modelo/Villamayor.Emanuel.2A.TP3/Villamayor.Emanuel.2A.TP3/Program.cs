@@ -33,8 +33,8 @@ namespace Villamayor.Emanuel._2A.TP3
             //    Console.WriteLine(e.Message);
             //}
 
-            bool retorno = false;
-            Queue<EClases> clasesDelDia = new Queue<EClases>();
+         
+     
 
           
             

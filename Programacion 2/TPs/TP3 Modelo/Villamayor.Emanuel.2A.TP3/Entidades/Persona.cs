@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public abstract  class Persona
+    public abstract class Persona
     {
         #region Atributos
 
@@ -27,7 +27,14 @@ namespace Entidades
             }
             set
             {
-                this.apellido = value;
+                try
+                {
+                    this.apellido = this.ValidarNombreAppelido(value);
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
             }
         }
 
@@ -42,20 +49,21 @@ namespace Entidades
                 try
                 {
 
-                    this.dni = this.ValidarDni(this.Nacionalidad,value);
+                    this.dni = this.ValidarDni(this.Nacionalidad, value);
+
                 }
-               catch(DniInvalidoException e)
+                catch (DniInvalidoException e)
                 {
                     throw e;
                 }
-                catch(NacionalidadInvalidadException e)
+                catch (NacionalidadInvalidadException e)
                 {
                     throw e;
                 }
             }
         }
 
-    
+
         public ENacionalidad Nacionalidad
         {
             get
@@ -75,13 +83,13 @@ namespace Entidades
                 return this.nombre;
             }
 
-             set
+            set
             {
                 try
                 {
                     this.nombre = this.ValidarNombreAppelido(value);
                 }
-                catch(NacionalidadInvalidadException e)
+                catch (Exception e)
                 {
                     throw e;
                 }
@@ -94,13 +102,13 @@ namespace Entidades
             {
                 try
                 {
-                    this.dni = this.ValidarDni(this.Nacionalidad, value);
+                        this.dni = this.ValidarDni(this.Nacionalidad, value);
                 }
-                catch(DniInvalidoException e)
+                catch (DniInvalidoException e)
                 {
                     throw e;
                 }
-                catch(NacionalidadInvalidadException e)
+                catch (NacionalidadInvalidadException e)
                 {
                     throw e;
                 }
@@ -111,80 +119,88 @@ namespace Entidades
 
         #region Constructores
 
-        public Persona() : this("nombre","apellido",ENacionalidad.Argentino)
+        public Persona() : this("nombre", "apellido", ENacionalidad.Argentino)
         {
 
         }
 
-        public Persona(string nombre , string apellido , ENacionalidad nacionalidad) : this(nombre , apellido,1,nacionalidad)
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad) : this(nombre, apellido, 1, nacionalidad)
         {
-       
+
         }
 
-        public Persona(string nombre , string apellido , int dni , ENacionalidad nacionalidad)
-        { 
-          
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre,apellido,dni.ToString(),nacionalidad)
+        {
+
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Nacionalidad = nacionalidad;
             this.DNI = dni;
         }
 
-        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) 
+        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
         {
-            
+
             this.Nombre = nombre;
             this.apellido = apellido;
             this.nacionalidad = nacionalidad;
-           this.StringToDni = dni;
+            this.StringToDni = dni;
         }
-    #endregion
+        #endregion
 
-    #region Metodos
-
-    private int ValidarDni(ENacionalidad nacionalidad, int dato)
-        {
-            int retorno = -1;
-
-            switch (nacionalidad)
-            {
-                case ENacionalidad.Argentino:
-                    if (dato > 0 && dato < 90000000)
-                    {
-                        retorno = dato;
-                    }
-                    else
-                    {
-                        throw new DniInvalidoException("Error de formato");
-                    }
-
-                    break;
-
-                case ENacionalidad.Extranjero:
-
-                    if(dato>89999999 && dato<=99999999)
-                    {
-                        retorno = dato;
-                    }
-                    else
-                    {
-                        throw new DniInvalidoException("Error de formato");
-                    }
-
-                    break;
-
-                default:
-
-                    throw new NacionalidadInvalidadException("Nacionalidad Erronea");
-            }
-            return retorno;
-
-        }
-
+        #region Metodos
 
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
-            return this.ValidarDni(nacionalidad, Convert.ToInt32(dato));
+            int retorno = -1;
+            if (dato.Length <= 8 && Int32.TryParse(dato, out dni))
+            {
+                int dni = Int32.Parse(dato);
+                switch (nacionalidad)
+                {
+                    case ENacionalidad.Argentino:
+
+
+                        if (dni > 0 && dni < 90000000)
+                        {
+                            retorno = dni;
+                        }
+                        else
+                        {
+                            throw new NacionalidadInvalidadException("La Nacionalidad no se coincide con el numero de DNI");
+                        }
+
+                        break;
+
+                    case ENacionalidad.Extranjero:
+
+
+                        if (dni > 89999999 && dni <= 99999999)
+                        {
+                            retorno = dni;
+                        }
+                        else
+                        {
+                            throw new NacionalidadInvalidadException("La Nacionalidad no se coincide con el numero de DNI");
+                        }
+
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                throw new DniInvalidoException("dni no formato correcto");
+            }
+            return retorno;
+        }
+
+
+        private int ValidarDni(ENacionalidad nacionalidad, int dato)
+        {
+            return this.ValidarDni(nacionalidad, dato.ToString());
         }
 
         public override string ToString()
@@ -198,18 +214,28 @@ namespace Entidades
 
         private string ValidarNombreAppelido(string dato)
         {
-            if(dato is string)
-            {
+            bool validar = true;
 
-            }
-            else
+            foreach (char item in dato)
             {
-                throw new NacionalidadInvalidadException("nombre erroneo");
+                if (!(char.IsLetter(item)))
+                {
+                    validar = false;
+                    break;
+                }
+            }
+
+            if (validar != true)
+            {
+                //Caso contrario, no se cargará
+
+                throw new Exception("no se pudo cargar ,error en el nombre");
             }
 
             return dato;
         }
-
-        #endregion
     }
+
+    #endregion
 }
+

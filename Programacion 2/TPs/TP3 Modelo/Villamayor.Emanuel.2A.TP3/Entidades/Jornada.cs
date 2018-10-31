@@ -76,7 +76,8 @@ namespace Entidades
         {
             bool retorno = false;
 
-            string path = (Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Jornada.txt");
+            //  string path = (Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Jornada.txt");
+            string path = Environment.CurrentDirectory + @"\Jornada.txt";
             try
             {
                using (StreamWriter sm = new StreamWriter(path, false))
