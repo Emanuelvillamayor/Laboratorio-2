@@ -138,8 +138,87 @@ namespace Entidades
         }
 
 
+        public static Universidad operator +(Universidad g , EClases clase)
+        {
+            int i;
+            bool flag = false;
+
+            for (i = 0; i < g.profesores.Count; i++)
+            {
+                if (g.profesores[i] == clase) //chequea si hay profesor que de esa clase
+                {
+                    flag = true;
+                    break;
+                }
+            }
 
 
+            if (flag == true)
+            {
+
+                Jornada j = new Jornada(clase, g.profesores[i]);  //asigna clase y profe a la jornada
+
+                for(i=0;i<g.alumnos.Count;i++)
+                {
+                    if(g.alumnos[i]==clase)
+                    {
+                        j += g.alumnos[i];  //los alumnos que tiene la misma clase se los asigno a jornada
+                    }
+                }
+
+            }
+            return g;
+        }
+        
+        public static Universidad operator +(Universidad g , Alumno a)
+        {
+            if(g!=a)
+            {
+                g.alumnos.Add(a);
+            }
+
+            return g;
+        }
+
+        public static Universidad operator +(Universidad g, Profesor i)
+        {
+            if(g!=i)
+            {
+                g.profesores.Add(i);
+            }
+
+            return g;
+        }
+
+
+        //retornará el primer Profesor capaz de dar esa clase
+        public static Profesor operator ==(Universidad g , EClases clase)
+        {
+            int i;
+            for (i = 0; i < g.profesores.Count; i++)
+            {
+                if (g.profesores[i] == clase) 
+                {                 
+                    break;
+                }
+            }
+            return g.profesores[i];
+        }
+
+
+        // retornará el primer Profesor que no pueda dar la clase
+        public static Profesor operator !=(Universidad g, EClases clase)
+        {
+            int i;
+            for (i = 0; i < g.profesores.Count; i++)
+            {
+                if (g.profesores[i] != clase) //chequea si hay profesor que de esa clase
+                {
+                    break;
+                }
+            }
+            return g.profesores[i];
+        }
         #endregion
 
 
