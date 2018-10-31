@@ -22,9 +22,9 @@ namespace Entidades
             Profesor.random = new Random();
         }
 
-        public Profesor() : this(0, "nombre", "apellido", "1", ENacionalidad.Argentino) 
+        public Profesor() : this(0,"no tiene nombre","no tiene apelldio","1",ENacionalidad.Argentino)
         {
-          
+        
         }
 
        public Profesor(int id ,string nombre , string apellido , string dni , ENacionalidad nacionalidad):base(id,nombre,apellido,dni,nacionalidad)

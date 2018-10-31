@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//xmlSerializer -> tiene metodo serialize  y metodo deserealize  transformar objeto vivo en memoria para volverlo a utilizarlo
+//dos parametros uno que sepa escribir en xml y el tipo a serializar , para deserealizar solo el parametro para leer
 
+//xmlTextWriter ->ademas del path necesita en el otro parametro un enumerado que establece el juego de caracteres a escribir encoding.UTF-8
+//xmlTextReader ->solo necesita el path completo
 namespace Entidades
 {
    public abstract class Universitario : Persona
@@ -15,7 +19,8 @@ namespace Entidades
         #endregion
 
         #region Constructores
-        public Universitario() : this(0,"nombre","apellido","1",ENacionalidad.Argentino)
+
+        public Universitario() 
         {
 
         }
@@ -23,6 +28,7 @@ namespace Entidades
         {
             this.legajo = legajo;
         }
+
         #endregion
 
         #region Metodos
@@ -39,8 +45,6 @@ namespace Entidades
 
         protected abstract string ParticiparEnClase();
 
-        
-
         #endregion
 
         #region SobrecargaOperadores
@@ -49,10 +53,12 @@ namespace Entidades
         {
             bool retorno = false;
 
-          //  if(obj is Universitario && this is Universitario)
-                if (obj is Universitario)
-            {
-                retorno = true;
+         if (obj is Universitario)   
+           {
+                if(this == (Universitario)obj)
+                {
+                    retorno = true;
+                }             
             }
             return retorno;
         }
@@ -60,14 +66,12 @@ namespace Entidades
         public static bool operator ==(Universitario pg1,Universitario pg2) //si son del mismo Tipo y su Legajo o DNI son iguales
         {
             bool retorno = false;
-
-            if(pg1.Equals(pg2))
-            {
+          
                 if(pg1.legajo==pg2.legajo || pg1.DNI == pg2.DNI)
                 {
                     retorno = true;
                 }
-            }
+            
             return retorno;
         }
 
@@ -75,6 +79,7 @@ namespace Entidades
         {
             return !(pg1 == pg2);
         }
+
         #endregion
 
 

@@ -26,15 +26,8 @@ namespace Entidades
                 return this.apellido;
             }
             set
-            {
-                try
-                {
-                    this.apellido = this.ValidarNombreAppelido(value);
-                }
-                catch (Exception e)
-                {
-                    throw e;
-                }
+            {             
+                    this.apellido = this.ValidarNombreAppelido(value);                          
             }
         }
 
@@ -45,21 +38,8 @@ namespace Entidades
                 return this.dni;
             }
             set
-            {
-                try
-                {
-
-                    this.dni = this.ValidarDni(this.Nacionalidad, value);
-
-                }
-                catch (DniInvalidoException e)
-                {
-                    throw e;
-                }
-                catch (NacionalidadInvalidadException e)
-                {
-                    throw e;
-                }
+            {           
+                    this.dni = this.ValidarDni(this.Nacionalidad, value);                        
             }
         }
 
@@ -84,34 +64,16 @@ namespace Entidades
             }
 
             set
-            {
-                try
-                {
-                    this.nombre = this.ValidarNombreAppelido(value);
-                }
-                catch (Exception e)
-                {
-                    throw e;
-                }
+            {           
+                    this.nombre = this.ValidarNombreAppelido(value);                        
             }
         }
 
         public string StringToDni
         {
             set
-            {
-                try
-                {
-                        this.dni = this.ValidarDni(this.Nacionalidad, value);
-                }
-                catch (DniInvalidoException e)
-                {
-                    throw e;
-                }
-                catch (NacionalidadInvalidadException e)
-                {
-                    throw e;
-                }
+            {            
+               this.dni = this.ValidarDni(this.Nacionalidad, value);                          
             }
         }
 
@@ -119,33 +81,28 @@ namespace Entidades
 
         #region Constructores
 
-        public Persona() : this("nombre", "apellido", ENacionalidad.Argentino)
+        public Persona() 
         {
 
         }
 
-        public Persona(string nombre, string apellido, ENacionalidad nacionalidad) : this(nombre, apellido, 1, nacionalidad)
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
-
+            this.nacionalidad = nacionalidad;
+            this.nombre = nombre;
+            this.apellido = apellido;
         }
 
-        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre,apellido,dni.ToString(),nacionalidad)
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre,apellido,nacionalidad)
         {
-
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.Nacionalidad = nacionalidad;
             this.DNI = dni;
         }
 
-        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
-        {
-
-            this.Nombre = nombre;
-            this.apellido = apellido;
-            this.nacionalidad = nacionalidad;
+        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
+        {      
             this.StringToDni = dni;
         }
+
         #endregion
 
         #region Metodos

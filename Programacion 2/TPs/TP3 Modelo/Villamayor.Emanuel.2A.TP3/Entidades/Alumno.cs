@@ -15,9 +15,6 @@ namespace Entidades
 
         #endregion
 
-
-
-
         #region Constructores
 
         public Alumno() : this(0,"nombre","apellido","1",ENacionalidad.Argentino,EClases.Laboratorio)
@@ -85,8 +82,7 @@ namespace Entidades
             {
                 retorno = true;
             }
-
-            //return !(a == clase);
+         
             return retorno;
         }
 

@@ -21,18 +21,18 @@ namespace Entidades
 
      public DniInvalidoException(string message) : base(message)
         {
-
+            this.mensajeBase = message;
         }
 
         public DniInvalidoException(string message , Exception e) : base(message,e)
         {
+            this.mensajeBase = message;
+        }
+
+        public DniInvalidoException(Exception e): base("El dni presenta un error de formato!",e)
+        {
 
         }
 
-        //public DniInvalidoException(Exception e)
-        //{
-
-        //}
-        
     }
 }
