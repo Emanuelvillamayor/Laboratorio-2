@@ -77,6 +77,7 @@ namespace Entidades
         #endregion
 
         #region Sobrecarga
+
    public override string ToString()
         {
             return this.MostrarDatos();

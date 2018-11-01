@@ -17,7 +17,7 @@ namespace Entidades
 
         #region Constructores
 
-        public Alumno() : this(0,"nombre","apellido","1",ENacionalidad.Argentino,EClases.Laboratorio)
+        public Alumno() 
         {
 
         }
