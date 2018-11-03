@@ -11,6 +11,12 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+        /// <summary>
+        /// Metodo que implementa el metodo Guardar de la interfaz IArchivo
+        /// </summary>
+        /// <param name="archivo">direccion del achivo(path)</param>
+        /// <param name="datos">datos a serializar</param>
+        /// <returns>true si pudo guardar , false si no pudo</returns>
         public bool Guardar(string archivo, T datos)
         {
             bool retorno = false;
@@ -33,6 +39,12 @@ namespace Archivos
             
         }
 
+        /// <summary>
+        /// Metodo que implementa el metodo de la interfaz IArchivo
+        /// </summary>
+        /// <param name="archivo">direccion del archivo(path)</param>
+        /// <param name="datos">datos a leer</param>
+        /// <returns>true si pudo leer , false si no</returns>
         public bool Leer(string archivo, out T datos)
         {
             bool retorno = false;

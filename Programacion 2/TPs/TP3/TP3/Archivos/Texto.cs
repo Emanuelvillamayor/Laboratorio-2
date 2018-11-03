@@ -10,6 +10,12 @@ namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
+        /// <summary>
+        /// Metodo el cual implementa el metodo Guardar de la interfaz IArchivo
+        /// </summary>
+        /// <param name="archivo">direccion del archivo (path)</param>
+        /// <param name="datos">datos a guardar</param>
+        /// <returns>true si guarda los datos , false si no</returns>
         public bool Guardar(string archivo, string datos)
         {
             bool retorno = false;
@@ -30,7 +36,12 @@ namespace Archivos
             return retorno;
         }
     
-
+        /// <summary>
+        /// Metodo que implementa el metodo Leer de la interfaz IArchivo
+        /// </summary>
+        /// <param name="archivo">direccion del archivo (path)</param>
+        /// <param name="datos">cadena en donde se guardan los datos que se leen</param>
+        /// <returns>true si pudo leer , false si no</returns>
         public bool Leer(string archivo, out string datos)
         {
             bool retorno = false;

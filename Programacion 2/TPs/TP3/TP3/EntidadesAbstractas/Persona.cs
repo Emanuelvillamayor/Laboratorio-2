@@ -18,7 +18,10 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Propiedades
-
+     
+        /// <summary>
+        /// get y set del atributo apellido con la validacion de apellido correcto en el set
+        /// </summary>
         public string Apellido
         {
             get
@@ -31,6 +34,9 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// set y get para el atributo dni en con la validacion de que ingrese un dni correcto
+        /// </summary>
         public int DNI
         {
             get
@@ -43,7 +49,9 @@ namespace EntidadesAbstractas
             }
         }
 
-
+        /// <summary>
+        /// gey y set del atributo nacionalidad
+        /// </summary>
         public ENacionalidad Nacionalidad
         {
             get
@@ -56,6 +64,9 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// get y set del atributo nombre con la validacion de nombre correcto en el set
+        /// </summary>
         public string Nombre
         {
             get
@@ -69,6 +80,9 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// set para el atributo dni en  con la validacion de que ingrese un dni correcto
+        /// </summary>
         public string StringToDni
         {
             set
@@ -80,12 +94,19 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Constructores
-
+        /// <summary>
+        /// constructor por defecto
+        /// </summary>
         public Persona()
         {
 
         }
-
+        /// <summary>
+        /// constructor con 3 parametros
+        /// </summary>
+        /// <param name="nombre">nombre de persona</param>
+        /// <param name="apellido">apellido de persona</param>
+        /// <param name="nacionalidad">nacionalidad de persona</param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             this.nacionalidad = nacionalidad;
@@ -93,11 +114,25 @@ namespace EntidadesAbstractas
             this.apellido = apellido;
         }
 
+        /// <summary>
+        /// constructor parametrizado el cual llama al constructor de 3 parametros
+        /// </summary>
+        /// <param name="nombre">nombre de persona</param>
+        /// <param name="apellido">apellido de persona</param>
+        /// <param name="dni">dni de persona</param>
+        /// <param name="nacionalidad">nacionalidad de persona</param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.DNI = dni;
         }
 
+        /// <summary>
+        /// constructor parametrizado el cual llama al constrcutor de 3 parametros
+        /// </summary>
+        /// <param name="nombre">nombre de persona</param>
+        /// <param name="apellido">apellido de persona</param>
+        /// <param name="dni">dni de persona</param>
+        /// <param name="nacionalidad">nacionalidad de persona</param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.StringToDni = dni;
@@ -107,6 +142,12 @@ namespace EntidadesAbstractas
 
         #region Metodos
 
+        /// <summary>
+        /// Valida el formato del dni y que sea correcto dependiendo la nacionalidad de cada persona
+        /// </summary>
+        /// <param name="nacionalidad">nacionalidad de la persona</param>
+        /// <param name="dato">dni a validar</param>
+        /// <returns>retorna el dni  de la persona</returns>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int retorno = -1;
@@ -149,19 +190,28 @@ namespace EntidadesAbstractas
             }
             else
             {
-                throw new DniInvalidoException("dni no formato correcto");
+                throw new DniInvalidoException("Dni  formato incorrecto");
             }
             return retorno;
         }
 
-
+        /// <summary>
+        /// Valida el formato del dni y que sea correcto dependiendo la nacionalidad de cada persona, reutiliza al ValidarDni (string)
+        /// </summary>
+        /// <param name="nacionalidad">nacionalidad de persona</param>
+        /// <param name="dato">dni de persona</param>
+        /// <returns>retorna el dni de la persona</returns>
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             return this.ValidarDni(nacionalidad, dato.ToString());
         }
 
 
-
+        /// <summary>
+        /// Valida que los nombres sean cadenas con caracteres válidos para nombre
+        /// </summary>
+        /// <param name="dato">nombre de persona</param>
+        /// <returns>retorna cadena que puede ser nombre u apellido de persona</returns>
         private string ValidarNombreAppelido(string dato)
         {
             bool validar = true;
@@ -178,7 +228,7 @@ namespace EntidadesAbstractas
             if (validar != true)
             {
                 //Caso contrario, no se cargará
-
+                //no sabia si dejar una cadena vacia en el atributo , pero como dice no se cargar decidi enviar una excepcion
                 throw new Exception("no se pudo cargar ,error en el nombre");
             }
 
@@ -188,7 +238,10 @@ namespace EntidadesAbstractas
         #endregion
 
         #region SobrecargasMetodos
-
+        /// <summary>
+        /// Sobrecarga de metodo
+        /// </summary>
+        /// <returns>Retorna todos los datos de persona</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -208,7 +261,6 @@ namespace EntidadesAbstractas
             Argentino,
             Extranjero
         }
-
 
         #endregion
     
