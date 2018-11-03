@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EntidadesAbstractas;
 using Excepciones;
+using Archivos;
 namespace EntidadesInstanciables
 {
    public class Universidad
@@ -100,6 +101,25 @@ namespace EntidadesInstanciables
             }
 
             return sb.ToString();
+        }
+
+        public static bool Guardar(Universidad u)
+        {
+            Xml<Universidad> x = new Xml<Universidad>();
+
+            return x.Guardar((AppDomain.CurrentDomain.BaseDirectory) + @"\Universidad.Xml", u);
+
+
+        }
+
+        public static Universidad Leer()
+        {
+            Universidad u= new Universidad();
+            
+            Xml<Universidad> x = new Xml<Universidad>();
+            x.Leer((AppDomain.CurrentDomain.BaseDirectory) + @"\Universidad.Xml", out u);
+
+            return u;
         }
 
         #endregion

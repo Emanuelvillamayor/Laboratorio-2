@@ -98,16 +98,16 @@ namespace Program
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine(gim.ToString());
-            Console.ReadKey();      
-            //try
-            //{
-            //    Universidad.Guardar(gim);
-            //    Console.WriteLine("Archivo de Universidad guardado.");
-            //}
-            //catch (ArchivosException e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
+            Console.ReadKey();
+            try
+            {
+                Universidad.Guardar(gim);
+                Console.WriteLine("Archivo de Universidad guardado.");
+            }
+            catch (ArchivosException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             try
             {
                 int jornada = 0;
