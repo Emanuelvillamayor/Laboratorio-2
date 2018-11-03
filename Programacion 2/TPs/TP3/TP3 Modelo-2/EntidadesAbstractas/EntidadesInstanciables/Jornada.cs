@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
-
+using Archivos;
 namespace EntidadesInstanciables
 {
    public class Jornada
@@ -74,47 +74,22 @@ namespace EntidadesInstanciables
 
         #region Metodos
 
-        //public static bool Guardar(Jornada jornada)
-        //{
-        //    bool retorno = false;
+       public static bool Guardar(Jornada jornada)
+        {
+    
+            Texto t = new Texto();
+   
+            return  t.Guardar((AppDomain.CurrentDomain.BaseDirectory) + @"\Jornada.txt", jornada.ToString());
+        }
 
-        //    //  string path = (Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Jornada.txt");
-        //    string path = Environment.CurrentDirectory + @"\Jornada.txt";
-        //    try
-        //    {
-        //        using (StreamWriter sm = new StreamWriter(path, false))
-        //        {
-        //            sm.WriteLine(jornada.ToString());
-        //        }
-        //        retorno = true;
-        //    }
-        //    catch (ArchivosException e)
-        //    {
-        //        throw new ArchivosException(e); //fijarme si aca tiene que crear una nuevo instancia pro el inner exception
-        //    }
-
-        //    return retorno;
-        //}
-
-        //public static string Leer()
-        //{
-        //    string retorno = "";
-        //    string path = (AppDomain.CurrentDomain.BaseDirectory) + @"\Jornada.txt";
-        //    try
-        //    {
-
-
-        //        using (StreamReader sr = new StreamReader(path))
-        //        {
-        //            retorno = sr.ReadToEnd();
-        //        }
-        //    }
-        //    catch (ArchivosException e)
-        //    {
-        //        throw new ArchivosException(e);
-        //    }
-        //    return retorno;
-        //}
+        public static string Leer()
+        {
+            string retorno ;
+            Texto t = new Texto();
+            t.Leer((AppDomain.CurrentDomain.BaseDirectory) + @"\Jornada.txt", out retorno);
+              
+            return retorno;
+        }
 
 
         #endregion
