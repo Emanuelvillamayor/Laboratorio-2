@@ -36,9 +36,40 @@ namespace TestUnitario
             {
                 Assert.IsTrue(true);
             }
+        }
 
+        [TestMethod]
+        public void ValidarNulidadenAtributos()
+        {
+            Universidad u1 = new Universidad();
+            Alumno a1 = new Alumno(2, "lucas", "villalba", "91111111", Persona.ENacionalidad.Extranjero, Universidad.EClases.Legislacion);
+            Profesor p1 = new Profesor(5, "lopez", "gomez", "16353423", Persona.ENacionalidad.Argentino);
 
+            Assert.IsNotNull(u1.Alumnos);
+            Assert.IsNotNull(u1.Instructores);
+            Assert.IsNotNull(u1.Jornadas);
+            Assert.IsNotNull(a1);
+            Assert.IsNotNull(p1);
 
+        }
+
+        [TestMethod]
+        public void ValidarSiSeRepiteAlumno()
+        {
+            Universidad u = new Universidad();
+            Alumno a1 = new Alumno(2, "jorge", "dominguez", "12345678", Persona.ENacionalidad.Argentino, Universidad.EClases.Laboratorio);
+            Alumno a2 = new Alumno(2, "jorge", "dominguez", "87654321", Persona.ENacionalidad.Argentino, Universidad.EClases.Laboratorio);
+
+            try
+            {
+                u += a1;
+                u += a2;
+                Assert.Fail("Tiene que indicar error ya que tienen el mismo legajo y son del mismo tipo");
+            }
+            catch(AlumnoRepetidoException e)
+            {
+                Assert.IsTrue(true);
+            }
         }
 
     }

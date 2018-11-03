@@ -98,8 +98,7 @@ namespace Program
                 Console.WriteLine(e.Message);
             }
             Console.WriteLine(gim.ToString());
-            Console.ReadKey();
-            Console.Clear();
+            Console.ReadKey();      
             //try
             //{
             //    Universidad.Guardar(gim);
@@ -109,17 +108,17 @@ namespace Program
             //{
             //    Console.WriteLine(e.Message);
             //}
-            //try
-            //{
-            //    int jornada = 0;
-            //    Jornada.Guardar(gim[jornada]);
-            //    Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
-            //    //Console.WriteLine(Jornada.Leer());
-            //}
-            //catch (ArchivosException e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
+            try
+            {
+                int jornada = 0;
+                Jornada.Guardar(gim[jornada]);
+                Console.WriteLine("Archivo de Jornada {0} guardado.", jornada);
+               // Console.WriteLine(Jornada.Leer());
+            }
+            catch (ArchivosException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadKey();
         }
     }

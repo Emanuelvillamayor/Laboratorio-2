@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Excepciones
 {
-   public class ArchivosExcepcion : Exception
+   public class ArchivosException : Exception
     {
 
-        public ArchivosExcepcion(Exception innerExcepcion) : base("error en el archivo",innerExcepcion)
+        public ArchivosException(Exception innerExcepcion) : base("error en el archivo",innerExcepcion)
         {
 
         }
