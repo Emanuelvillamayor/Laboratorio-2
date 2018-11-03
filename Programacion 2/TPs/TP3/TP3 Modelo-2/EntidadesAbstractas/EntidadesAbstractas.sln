@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivos", "Archivos\Archivos.csproj", "{54256E4A-7EC6-410E-B77B-0A5D65AEC31A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{3166AB2B-129C-4A3C-A4E2-432F757B2B2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{54256E4A-7EC6-410E-B77B-0A5D65AEC31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54256E4A-7EC6-410E-B77B-0A5D65AEC31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54256E4A-7EC6-410E-B77B-0A5D65AEC31A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3166AB2B-129C-4A3C-A4E2-432F757B2B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3166AB2B-129C-4A3C-A4E2-432F757B2B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3166AB2B-129C-4A3C-A4E2-432F757B2B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3166AB2B-129C-4A3C-A4E2-432F757B2B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
