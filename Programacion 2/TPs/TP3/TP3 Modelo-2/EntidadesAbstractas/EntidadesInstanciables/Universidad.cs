@@ -19,7 +19,7 @@ namespace EntidadesInstanciables
 
         #region Propiedades
 
-        //indexador
+      
         public Jornada this[int indice]
         {
             get
@@ -88,17 +88,41 @@ namespace EntidadesInstanciables
 
         #endregion
 
-        #region Sobrecargas
-        //Un Universidad será igual a un Alumno si el mismo está inscripto en él.
-        //va a tener que usar el == de universitario castearlo o no ?
+        #region Metodos
+
+        private static string MostrarDatos(Universidad uni)
+        {
+            StringBuilder sb = new StringBuilder();
+         
+            foreach(Jornada item in uni.jornada)
+            {
+                sb.AppendLine(item.ToString());
+            }
+
+            return sb.ToString();
+        }
+
+        #endregion
+
+        #region SobrecargaMetodos
+
+        public override string ToString()
+        {
+            return Universidad.MostrarDatos(this);
+        }
+
+        #endregion
+
+        #region SobrecargasOperadores
+
         public static bool operator ==(Universidad g, Alumno a)
         {
             bool retorno = false;
 
             foreach (Alumno item in g.alumnos)
             {
-               // if (!Object.Equals(t, null)) 
-                    if (item == a)
+               
+                if (item == a)
                 {
                     retorno = true;
                     break;
@@ -114,17 +138,12 @@ namespace EntidadesInstanciables
         }
 
 
-
-        //Un Universidad será igual a un Profesor si el mismo está dando clases en él
-        //va a tener que usar el == de universitario castearlo o no ?
-
         public static bool operator ==(Universidad g, Profesor i)
         {
             bool retorno = false;
 
             foreach (Profesor item in g.profesores)
             {
-                // if (!Object.Equals(t, null)) 
                 if (i == item)
                 {
                     retorno = true;
@@ -143,33 +162,19 @@ namespace EntidadesInstanciables
 
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            int i;
-            bool flag = false;
+            Profesor p = (g == clase);
+            Jornada j = new Jornada(clase, p);
 
-            for (i = 0; i < g.profesores.Count; i++)
+            foreach(Alumno item in g.alumnos)
             {
-                if (g.profesores[i] == clase) //chequea si hay profesor que de esa clase
+                if(item == clase)
                 {
-                    flag = true;
-                    break;
+                    j += item;
                 }
+                
             }
 
-
-            if (flag == true)
-            {
-
-                Jornada j = new Jornada(clase, g.profesores[i]);  //asigna clase y profe a la jornada
-
-                for (i = 0; i < g.alumnos.Count; i++)
-                {
-                    if (g.alumnos[i] == clase)
-                    {
-                        j += g.alumnos[i];  //los alumnos que tiene la misma clase se los asigno a jornada
-                    }
-                }
-
-            }
+            g.Jornadas.Add(j);
             return g;
         }
 
@@ -178,6 +183,10 @@ namespace EntidadesInstanciables
             if (g != a)
             {
                 g.alumnos.Add(a);
+            }
+            else
+            {
+                throw new AlumnoRepetidoException();
             }
 
             return g;
@@ -190,11 +199,13 @@ namespace EntidadesInstanciables
                 g.profesores.Add(i);
             }
 
+          //en el else no sabia si agregar una excepcion o algo ya que no lo dice en el enunciado
+
             return g;
         }
 
 
-        //retornará el primer Profesor capaz de dar esa clase
+        
         public static Profesor operator ==(Universidad g, EClases clase)
         {
         
@@ -221,24 +232,30 @@ namespace EntidadesInstanciables
         }
 
 
-        // retornará el primer Profesor que no pueda dar la clase
+        
         public static Profesor operator !=(Universidad g, EClases clase)
         {
+            Profesor retorno = new Profesor();
+            bool flag = false;
             int i;
             for (i = 0; i < g.profesores.Count; i++)
             {
-                if (g.profesores[i] != clase) //chequea si hay profesor que de esa clase
+                if (g.profesores[i] != clase) 
                 {
+                    retorno = g.profesores[i];
+
                     break;
                 }
             }
-            return g.profesores[i];
+            if(flag==false)
+            {
+                //nose si tirar la excepcion o retornar null o algo en el caso de que todos los profesores  puedan dar la clase
+                throw new SinProfesorException();
+            }
+            return retorno;
         }
+
         #endregion
-
-
-
-
 
         #region Enumerados
 

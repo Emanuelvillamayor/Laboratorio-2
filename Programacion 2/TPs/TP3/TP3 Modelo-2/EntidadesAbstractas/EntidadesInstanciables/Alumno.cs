@@ -51,7 +51,20 @@ namespace EntidadesInstanciables
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.MostrarDatos());
-            sb.AppendFormat("ESTADO DE CUENTA: {0}\n", this.estadoCuenta);
+         
+            switch(this.estadoCuenta)
+            {
+                case EEstadoCuenta.AlDia:
+                    sb.AppendLine("ESTADO DE CUENTA: Cuota al dia");
+                    break;
+                case EEstadoCuenta.Becado:
+                    sb.AppendLine("ESTADO DE CUENTA:  cuota becada");
+                    break;
+                default:
+                    sb.AppendLine("ESTADO DE CUENTA: cuota con deuda");
+                    break;
+
+            }
             sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();
         }
