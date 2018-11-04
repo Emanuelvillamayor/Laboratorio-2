@@ -67,21 +67,22 @@ namespace EntidadesInstanciables
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.MostrarDatos());
-         
+
             //en la consola del pdf se muestra como "Cuota al dia" por lo cual realize este switch en vez de mostrar solamente los nombres que contiene el enumerado
-           
-            switch(this.estadoCuenta)
+
+            switch (this.estadoCuenta)
             {
                 case EEstadoCuenta.AlDia:
                     sb.AppendLine("ESTADO DE CUENTA: Cuota al dia");
                     break;
                 case EEstadoCuenta.Becado:
-                    sb.AppendLine("ESTADO DE CUENTA:  cuota becada");
+                    sb.AppendFormat("ESTADO DE CUENTA: {0}\n", this.estadoCuenta);
                     break;
-                default:
-                    sb.AppendLine("ESTADO DE CUENTA: cuota con deuda");
-                    break;
-
+                case EEstadoCuenta.Deudor:
+                    sb.AppendFormat("ESTADO DE CUENTA: {0}\n", this.estadoCuenta);
+                   break;
+                default:                  
+                   break;
             }
             sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();

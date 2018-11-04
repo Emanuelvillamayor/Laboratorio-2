@@ -25,6 +25,7 @@ namespace Archivos
                 using (StreamWriter sm = new StreamWriter(archivo, false))
                 {
                     sm.WriteLine(datos);
+                    retorno = true;
                 }
                 retorno = true;
             }

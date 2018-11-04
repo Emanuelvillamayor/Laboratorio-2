@@ -72,5 +72,12 @@ namespace TestUnitario
             }
         }
 
+        [TestMethod]
+        public void ValidarValorNumerico()
+        {
+            Profesor p1 = new Profesor(5, "lopez", "gomez", "16353423", Persona.ENacionalidad.Argentino);
+            Assert.IsInstanceOfType(p1.DNI, typeof(int));
+        }
+
     }
 }

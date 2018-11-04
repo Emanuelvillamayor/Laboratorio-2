@@ -23,7 +23,7 @@ namespace Excepciones
 
         public DniInvalidoException(string message) : base(message)
         {
-            
+            this.mensajeBase = message;
         }
    
         public DniInvalidoException(Exception e) : base("El dni presenta un error de formato!", e)

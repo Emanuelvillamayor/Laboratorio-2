@@ -59,8 +59,7 @@ namespace EntidadesInstanciables
             int i;
 
             for (i = 0; i < 2; i++)
-            {
-             
+            {          
                 this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,3));
             }
 

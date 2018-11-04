@@ -25,7 +25,7 @@ namespace EntidadesInstanciables
         {
             get
             {
-                if (indice >= 0 && indice <= this.jornada.Count)
+                if (indice >= 0 && indice < this.jornada.Count)
                 {
                     return this.jornada[indice];
                 }
@@ -105,6 +105,7 @@ namespace EntidadesInstanciables
             foreach(Jornada item in uni.jornada)
             {
                 sb.AppendLine(item.ToString());
+                sb.AppendLine("<------------------------------------------------>");
             }
 
             return sb.ToString();
