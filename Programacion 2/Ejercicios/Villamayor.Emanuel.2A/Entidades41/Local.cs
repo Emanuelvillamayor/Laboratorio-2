@@ -30,7 +30,7 @@ namespace Entidades41
 
         #region Constructores
 
-        public Local(Llamada llamada, float costo) : base(llamada.Duracion, llamada.NroDestino, llamada.NroOrigen)
+        public Local(Llamada llamada, float costo) : this(llamada.NroDestino,llamada.Duracion,llamada.NroDestino,costo)
         {
             this.costo = costo;
         }
