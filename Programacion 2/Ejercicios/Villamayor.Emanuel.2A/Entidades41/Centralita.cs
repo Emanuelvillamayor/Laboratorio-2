@@ -157,6 +157,7 @@ namespace Entidades41
                 if ((Llamada)item == (Llamada)l)
                 {
                     retorno = true;
+                    break;
                 }
 
             }
@@ -178,7 +179,7 @@ namespace Entidades41
             }
             else
             {
-                throw new CentralitaException();
+                throw new CentralitaException("La llamada se encuentra registrada en el sistema","Clase Centralita","Metodo Sobrecarga +");
             }
 
             return c;

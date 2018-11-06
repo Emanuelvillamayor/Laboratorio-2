@@ -15,6 +15,8 @@ namespace Ejercicio50
 
         public V Leer()
         {
+            //tres formas de hacerlo
+
             // return (V)Convert.ChangeType("Texto Leido", typeof(V));
             //return (V)Convert.ChangeType("Texto Leido", typeof(string));
             return (V)Convert.ChangeType("Texto Leido", TypeCode.String);

@@ -24,16 +24,20 @@ namespace TestEjercicio41
             // La centralita mostrará por pantalla todas las llamadas según las vaya registrando.
             try
             {
-                c.Llamadas.Add(l1);
+                c += l1;
                 Console.WriteLine(c);
-                c.Llamadas.Add(l2);
+                c += l2;
                 Console.WriteLine(c);
-                c.Llamadas.Add(l3);
+                c += l3;
                 Console.WriteLine(c);
-                c.Llamadas.Add(l4);
+                c += l4;
                 Console.WriteLine(c);
                 c.OrdenarLlamadas();
                 Console.WriteLine(c);
+
+                //lanzo excepcion
+                c += l1;
+
                 Console.ReadKey();
             }
             catch(CentralitaException e)
