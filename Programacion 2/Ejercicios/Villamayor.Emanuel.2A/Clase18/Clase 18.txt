@@ -1,0 +1,15 @@
+UPDATE TABLA
+SET CAMPO1 = VALOR1 , CAMPO2 = VALOR2
+CAMPO N = VALOR N
+
+
+WHER CAMPOID=VALOR ID   ->se coloca esta reestriccion por lo general con la "primary key " asi voy a modificar un registro
+                          porque sino hay un update masivo 
+
+
+En nuestro caso vamos a recibir un objeto televisor por parametro y vamos a modificar todos los campos , la condicion
+va a ser que nuestra clave primaria sea igual al codigo que viene como parametro en mi metodo , los campos"primary key"
+NO SE PUEDE MODIFICAR
+
+
+HASROWS -> devuelve si tiene almenso una fila la lista que le paso
