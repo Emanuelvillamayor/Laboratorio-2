@@ -229,7 +229,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test53", "Test53\Test53.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase17", "Clase17", "{0CD63B99-8307-4CF0-80B9-9A32E34006DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioClase17", "EjercicioClase17\EjercicioClase17.csproj", "{4CDA894D-264B-424E-8BA5-844AE917D0A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioClase17", "Clase17\EjercicioClase17.csproj", "{4CDA894D-264B-424E-8BA5-844AE917D0A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
