@@ -20,6 +20,13 @@ namespace EntidadesClase18
         public int pulgadas;
         public string pais;
 
+        //delegado prueba
+        public event MiDelegado miEvento;
+        //delegado con parametros
+        public event DelegadoTV eventoTv;
+
+        
+
         #endregion
 
         #region Constructores
@@ -56,6 +63,11 @@ namespace EntidadesClase18
                 conexion.Open();
                 comando.ExecuteNonQuery(); //ejecuta consultas que no van a retornar ningun tipo de resultado
                 conexion.Close();
+
+                //LANZAMOS EL EVENTO
+                this.miEvento();
+                //Lanzamos el segundo evento con parametros
+                this.eventoTv(this,new TVEventsArgs());
                 retorno = true;
             }
             catch (Exception e)
@@ -194,4 +206,10 @@ namespace EntidadesClase18
         }
         #endregion
     }
+
+    //defino delegado a nivel de NAMESPACE
+    public delegate void MiDelegado();
+
+    //nuevo delegado con parametros
+    public delegate void DelegadoTV(Televisor t, TVEventsArgs args);
 }
