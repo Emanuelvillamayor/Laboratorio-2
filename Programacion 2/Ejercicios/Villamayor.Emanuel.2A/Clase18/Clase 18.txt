@@ -1,0 +1,100 @@
+UPDATE TABLA
+SET CAMPO1 = VALOR1 , CAMPO2 = VALOR2
+CAMPO N = VALOR N
+
+
+WHER CAMPOID=VALOR ID   ->se coloca esta reestriccion por lo general con la "primary key " asi voy a modificar un registro
+                          porque sino hay un update masivo 
+
+
+En nuestro caso vamos a recibir un objeto televisor por parametro y vamos a modificar todos los campos , la condicion
+va a ser que nuestra clave primaria sea igual al codigo que viene como parametro en mi metodo , los campos"primary key"
+NO SE PUEDE MODIFICAR
+
+
+HASROWS -> devuelve si tiene almenso una fila la lista que le paso
+
+
+
+
+--------------------------------- EVENTOS
+Es una accion que sucede cuando pase algo en mi app , ese algo puede ser programatico = que nosotros lo definimos
+o de mi mismo codigo , es decir lo puedo lanzar porque yo quiero o porque la aplicacion quier.
+Yo puedo capturar o no los eventos tengo la decision.
+
+-Vamos a lanzar evento cuando alguien quiera insertar algo en mi app
+
+-Como generar eventos c#:
+
+ *Es necesario generar un tipo de dato , es un objeto de tipo "Delegate" , son objetos que son punteros a funciones
+  van a tener una lista de todas las direcciones de memoria de todos los metodos que yo fui agregando , es como un agenda
+  de metodos
+
+  *Delegate - REESTRICION: los metodos que va a poder alojar tienen que tener LA MISMA FIRMA TODOS QUE ADMITE EL DELEGADO
+                            sino me tira error en tiempo de compilacion .
+
+  *TIPOS DE RETORNO : cualquier tipo de retorno
+
+  *Es una FIRMA DE UN METODO , solo le agrego el DELEGATE y se convierte en delegado
+  
+  *VISIBILIDAD: TIENE QUE SER PUBLICO.
+
+  *public event ->es como una variable la cual dispara el evento.
+
+  *No se define a nivel de clase ,SIEMPRE A NIVEL DEL NAMESPACE
+
+  *EL evento es el tipo del delegado.
+
+  *El metodo no sabe de donde va a venir el evento que tiene que ejecutar
+  
+  *EL UNICO QUE CONOCE QUIEN POSEE EVENTO DE SU TIPO Y CUAL ES LA DIRECCION DE MEMORIA QUE TIENE QUE ACCEDER
+   PARA EJECUTAR EL CODIGO.
+
+  *EL DELEGADO NUNCA EJECUTA NADA , SOLO REPARTE LAS DIRECCIONES DE MEMORIA QUE CONTIENE
+
+  *Al delegado no le interesa si agregamos dos veces el mismo metodo , lo mete y lo tira cuantas veces este en su lista.
+  
+  *DELEGADO NUNCA EJECUTA CODIGO , DELEGA SU FUNCIO OTRO PARA QUE SE DISPARE EL EVENTO Y EL DELEGADO
+   REPARTE LA EJECUCION DE LOS METODOS QUE POSEEN.
+   
+Como disparar evento?
+-solo acceder al aributo y hacemos this.  -> aparece rayito que es para eventos
+ -Una vez que lo lanzamos pueden pasar dos cosas :
+   1º que alguien escuche ese llamado
+   2º o que alguien no.
+
+-cuando disparamos el evento lo que hace es entre al delegado se ejecuta y vuelve (salto de flujo) NO ES UN RETURN
+  y es distinto del throw ya que este vuelve y el throw no.
+
+
+Asociar metodo con evento:
+ 1º generar un metodo en el main que sea estatico si es posible , el metodo se puede llamar
+    de cualquier modo pero debe SER EL MISMO RETORNO Y MISMOS PARAMETROS QUE EL DELEGADOs
+    Puede ser publico o privado , estatico o de instancia
+
+ 2ºAl objeto que contiene un atributo delegado , hacemos: 
+
+    objeto.evento += new delegado (delegado que creamos en el main SIN PARAMETROS);
+
+ Lo que hacemos con esta linea de codigo fue agregar a la lista invocacion del delegado agregar un metodo
+ y hacer una conexion del delegado con el main.
+
+ Lo que le interesa a el evento es la direccion de memoria del metodo que creamos para guardar solo eso.
+ 
+   
+
+CLASE EventsArgs: 
+ *obtener informacion de diversas cosas
+
+Pasos:
+1º CREO QUE EL DELGADO
+2º CREO EL ATRIBUTO CON EL EVENT
+3º CREO EL METODO PARA EL DELEGADO (SIMILAR)
+4º ASIGNO ESE METODO A MI ATRIBUO DE EVENTO CON EL +=
+5º DISPARO EL EVENTO DESDE ALGUN METODO EL CUAL ME VA A EJECUTAR EL METODO QUE CREE EN EL PASO 3.
+
+Lanzar cosas en c# dos formas : 
+
+ throw -> SOLO EXCEPCIONES
+ 
+ 
