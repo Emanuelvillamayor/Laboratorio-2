@@ -12,3 +12,10 @@ D:\Manu\New Lab\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ej
 D:\Manu\New Lab\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.csproj.CoreCompileInputs.cache
 D:\Manu\New Lab\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.exe
 D:\Manu\New Lab\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\bin\Debug\Ejercicio00.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\bin\Debug\Ejercicio00.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\bin\Debug\Ejercicio00.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio00\Ejercicio 00\obj\Debug\Ejercicio00.pdb

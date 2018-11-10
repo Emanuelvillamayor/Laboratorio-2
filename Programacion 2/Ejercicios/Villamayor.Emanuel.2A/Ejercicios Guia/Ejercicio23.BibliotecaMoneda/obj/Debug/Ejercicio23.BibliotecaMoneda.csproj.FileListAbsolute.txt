@@ -4,3 +4,9 @@ C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.dll
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\bin\Debug\Ejercicio23.BibliotecaMoneda.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\bin\Debug\Ejercicio23.BibliotecaMoneda.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.BibliotecaMoneda\obj\Debug\Ejercicio23.BibliotecaMoneda.pdb

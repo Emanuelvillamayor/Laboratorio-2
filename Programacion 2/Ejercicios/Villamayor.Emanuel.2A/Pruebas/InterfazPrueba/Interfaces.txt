@@ -1,0 +1,21 @@
+                                                    INTERFACES
+******
+-No me permiten colocarle modificadores de visibilidad ni decir si es abstract o virtual
+-Todos los metodos publicos
+-Utilidad es simular herencia multiple ya que una clase puede implemetar varias interfaces
+-No puede contener constructores ni atributos.
+-Las clases que implementan interfaces de manera explicita no pueden ser abstractas
+-No puedo instanciar una interfaz ya que no tiene constructores y es abstracta
+-Las clases derivadas de clases que implementan interfaces de manera explícita no pueden sobrescribir los métodos definidos explícitamente
+********
+
+-Creo una interfaz con una propiedad y un metodo , se la asigno a una clase,dentro de esa clase PUEDO MODIFICAR  SI VA A SER ABSTRACTO O NO EL METODO O PROPIEDAD 
+ pero NO PUEDO MODIFICAR LA VISIBILIDAD NI EL TIPO DE RETORNO.
+ 
+-Al implementar una interfaz de manera explicita en una clase abstracta , me permite implementar los metodos que contiene esa interfaz de manera explicita
+ pero sin poder modificar los valores de visibilidad ni de comportamiento , dentro de la clase abstracta no voy a poder llamar a ese metodo 
+ Desde una clase hija voy a poder llamar a ese metodo explicito de mi clase padre abstracta y utilizarlo pero no voy a poder hacerle un override.
+
+-Al implementar una interfaz de manera explicita en una clase de instancia , las clase hijas van a poder acceder a los metodos y propiedades de la interfaz
+ implementadas en la clase padre
+   

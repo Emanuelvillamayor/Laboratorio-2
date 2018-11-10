@@ -17,7 +17,7 @@ HASROWS -> devuelve si tiene almenso una fila la lista que le paso
 
 
 
---------------------------------- EVENTOS
+--------------------------------- EVENTOS---------------------------------------
 Es una accion que sucede cuando pase algo en mi app , ese algo puede ser programatico = que nosotros lo definimos
 o de mi mismo codigo , es decir lo puedo lanzar porque yo quiero o porque la aplicacion quier.
 Yo puedo capturar o no los eventos tengo la decision.

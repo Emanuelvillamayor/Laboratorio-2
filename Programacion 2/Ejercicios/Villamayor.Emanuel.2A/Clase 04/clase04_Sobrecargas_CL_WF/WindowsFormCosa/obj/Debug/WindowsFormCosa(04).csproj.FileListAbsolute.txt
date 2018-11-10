@@ -3,3 +3,16 @@ C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa.Properties.Resources.resources
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csproj.GenerateResource.cache
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\bin\Debug\WindowsFormCosa.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\bin\Debug\WindowsFormCosa.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\bin\Debug\WindowsFormCosa.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\bin\Debug\Entidades.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\bin\Debug\Entidades.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa.Form1.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa.Properties.Resources.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csproj.GenerateResource.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa(04).csproj.CopyComplete
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Clase 04\clase04_Sobrecargas_CL_WF\WindowsFormCosa\obj\Debug\WindowsFormCosa.pdb

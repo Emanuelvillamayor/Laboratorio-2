@@ -11,3 +11,16 @@ C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.csproj.CopyComplete
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.exe
 C:\Users\User\Desktop\Programacion-2-master\Programacion-2-master\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\bin\Debug\Ejercicio23.Forms.exe.config
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\bin\Debug\Ejercicio23.Forms.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\bin\Debug\Ejercicio23.Forms.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\bin\Debug\Ejercicio23.BibliotecaMoneda.dll
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\bin\Debug\Ejercicio23.BibliotecaMoneda.pdb
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.Form1.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.Properties.Resources.resources
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.csproj.CopyComplete
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.exe
+C:\Users\User\Desktop\Manu\Laboratorio-2\Programacion 2\Ejercicios\Villamayor.Emanuel.2A\Ejercicios Guia\Ejercicio23.Forms\obj\Debug\Ejercicio23.Forms.pdb
