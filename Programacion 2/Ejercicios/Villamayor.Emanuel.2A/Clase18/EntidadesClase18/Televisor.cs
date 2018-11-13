@@ -22,6 +22,7 @@ namespace EntidadesClase18
 
         //delegado prueba
         public event MiDelegado miEvento;
+
         //delegado con parametros
         public event DelegadoTV eventoTv;
 
