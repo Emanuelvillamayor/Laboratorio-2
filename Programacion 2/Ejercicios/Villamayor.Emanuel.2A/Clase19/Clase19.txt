@@ -1,0 +1,47 @@
+Asignar manejadores de eventos
+
+
+ -Doble click y se dibuja en la partial class que manejador iba a asociar con cada eventoy eso quedabac
+ -Ahora vamos a aociar un manejador de manera dinamica(tiempo de ejecucion) .
+
+Los delegados de los eventos en windows forms son todos iguales.
+
+Para asociar al button un evento hacemos :
+  
+   button1.Click += new EventHandler
+
+EventHantler -> lo unico que admiten es cualquier metodo SEA DE LO QUE SEA , solo que posea la misma firma
+                del delegad(obj , eventargs y que retorne void).
+
+¿COMO QUITAR MANEJADOR DE EVENTOS?
+
+   obj.evento -= new EventHandler();
+
+*******************************************************************************
+Los manejadores de eventos se puede asociar N veces y a varios eventos a la vez
+o varios manejadores a solo un evento
+*******************************************************************************
+
+
+Formulario MDI (multiple document Interface) : formulario que contiene otros formularios
+
+-En el evento load seteamos propiedad , isMdicontainer=true;
+
+-En vez de hacer form.show , form.show(formularioDueñoDelFormularioQuevoyAmostrar=this).
+
+
+
+**************************************************************************************************
+Formulario:
+
+frmDatos tiene metodo void ActualizarNombre(string nombre)
+
+Creamos delegado : public delegate void ActualizarNombrePorDelegado(string s)
+
+Necesito que el delegado sea visible tanto para uno como para otro.
+
+
+
+Propiedad OWNER (tipo form) instacçncia del formulario que es dueño del formulario actual.
+
+
