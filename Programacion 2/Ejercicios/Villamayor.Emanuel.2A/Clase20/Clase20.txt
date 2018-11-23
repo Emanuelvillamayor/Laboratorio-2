@@ -1,0 +1,40 @@
+                                                      CLASE 20
+
+
+Voy a la libreria de clases , y agrego una referencia de un ".dll"
+
+-Para poder visualizar el contenido de una libreria que no es mia , me parao sobre esa , click derecha y le damos a "examinadore de ojetos"
+ alli podemos observar el namespace raiz , y todas sus depencias es decir clases , enumerados PERO SOLO TODO LO QUE ES PUBLICO
+
+-Para poder agregar nuevos metodos o atributos etcetera a la clase del ".dll" creamos una nueva y  hacemos que la HEREDE
+
+-Agregamos un clase SELLADA desde un dll la cual es sellada pero  no podemos generar nuevos metodos ya que no se puede
+ DERIVAR , no podemos hacer nada , solo voy a poder obtener las propiedades que vienen en esa clase , o utilizar
+ metodos que se agreguen por afuera de mi clase y que yo los utilize como si fueran metodos propios de mi clase
+ ESTOS SON LOS METODOS DE EXTENSION.
+
+**********************************************************************************************************
+ SON METODOS ESTATICOS PERO QUE SE USAN COMO SI FUERAN METODOS DE INSTANCIA , NO PUEDO UTILIZAR EL METODO
+ DIRECTAMENTE DESDE LA CLASE , PRIMERO DEBO INSTANCIARLO.
+ PUEDO TENER PARAMETROS INFINITOS EN LOS METODOS , PUEDO TENER SOBRECARGAS 
+ EL PRIMER PARAMETRO SIEMPRE ES EL QUE VA A LLAMAR AL A ESA FUNCION
+**************************************************************************************
+
+-voy a poder agregar metodos que yo voy a diseñar y se van a adjuntar a los metodos que estan en object aunque
+ fisicamente no este dibujado dentro de la clase.Se va a hacer dentro de una CLASE ESTATICA
+
+-Los metodos estaticos dentro de la clase estatica tiene una particularidad:
+  *Para que se le indique que este metodo se va a delegar a una CLASE PARTICULAR (cualquier clase), hay que indicarle
+   cual va a ser la instancia a la cual se va a agregar , para eso se coloca la palabra "this" y el "tipo de dato"
+
+- - - - - - - - - - - - - - - - - -  --- - - 
+
+BASE DE DATOS:
+ Nos paramos en base de datos , click derecho , nueva base de datos,
+ Le pones el nombre , y se van a crear dos archivos con el mismo nombre pero
+ con distintas extensiones , por default se crean donde estan todas las bases de datos
+ Le damos a "agregar" y ya nos crea todas carpetas pero la que nos interesa es la que dice "table"
+ en table le damos a click derecho y a nueva tabla
+  *En las propiedades hay una que dice "especificaion de identidad" que nos permite
+   poner como autoincremental alguna variable , generalmente esto se hace para las "primary key"
+  *En el casos de un strimng , elegimos varchar(el parentesis de varchar indica la cantidad de char que podemos meter en la cadena)
