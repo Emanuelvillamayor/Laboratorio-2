@@ -29,6 +29,11 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Metodo que inserta un "paquete" en la base de datos correo-sp-2017
+        /// </summary>
+        /// <param name="p">Objeto a insertar</param>
+        /// <returns>true si pudo insertar el objeto , false si no</returns>
         public static bool Insertar(Paquete p)
         {
             bool retorno = false;

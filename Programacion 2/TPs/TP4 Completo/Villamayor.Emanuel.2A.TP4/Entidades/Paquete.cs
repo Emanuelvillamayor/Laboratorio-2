@@ -14,7 +14,8 @@ namespace Entidades
         private string direccionEntrega;
         private EEstado estado;
         private string trackingID;
-        private event DelegadoEstado InformaEstado;
+
+        public event DelegadoEstado InformaEstado;
 
         #endregion
 
@@ -72,11 +73,19 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Muestra los datos del paquete
+        /// </summary>
+        /// <param name="elemento">paquete a mostrar datos</param>
+        /// <returns>cadena con los datos del paquete</returns>
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
             return string.Format("{0} para {1}", ((Paquete)elemento).trackingID, ((Paquete)elemento).direccionEntrega);
         }
 
+        /// <summary>
+        /// Hace que el paquete cambie de forma
+        /// </summary>
         public void MockCicloDeVida()
         {
             do
@@ -110,6 +119,10 @@ namespace Entidades
 
         #region SobrecargaMetodos
 
+        /// <summary>
+        /// sobrecarga ToString para la clase paquete
+        /// </summary>
+        /// <returns>retorna string con datos del paquete</returns>
         public override string ToString()
         {
             return this.MostrarDatos(this);
@@ -119,6 +132,12 @@ namespace Entidades
 
         #region SobrecargaOperadores
 
+        /// <summary>
+        /// Sobrecarga del operador == , si dos paquetes tiene el mismo Tracking ID estos son iguales
+        /// </summary>
+        /// <param name="p1">paquete 1</param>
+        /// <param name="p2">paquete 2</param>
+        /// <returns>true si son iguales , false si no</returns>
         public static bool operator ==(Paquete p1 , Paquete p2)
         {
             bool retorno = false;
@@ -148,7 +167,13 @@ namespace Entidades
         }
 
         #endregion
+
+        #region Delegado
+
+        public delegate void DelegadoEstado(object sender, EventArgs e);
+
+        #endregion
     }
 
-    public delegate void DelegadoEstado(object sender, EventArgs e);
+
 }

@@ -43,6 +43,11 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Metodo que guarda en una cadena todos los paquetes de un correo
+        /// </summary>
+        /// <param name="elemento"></param>
+        /// <returns>string con datos de los paquetes de correo</returns>
         public string MostrarDatos(IMostrar<List<Paquete>> elemento)
         {
             StringBuilder sb = new StringBuilder();
@@ -56,6 +61,9 @@ namespace Entidades
             return sb.ToString();
         }
     
+        /// <summary>
+        /// Metodo que cierra todos los hilos activos
+        /// </summary>
         public void FinEntregas()
         {
             foreach(Thread item in this.mockPaquetes)
@@ -69,6 +77,12 @@ namespace Entidades
 
         #region SobrecargaOperadores
 
+        /// <summary>
+        /// Metodo que agrega paquetes en la lista de correo
+        /// </summary>
+        /// <param name="c">correo</param>
+        /// <param name="p">pquete</param>
+        /// <returns>correo con paquete agregado o no</returns>
         public static Correo operator + (Correo c , Paquete p)
         {
           

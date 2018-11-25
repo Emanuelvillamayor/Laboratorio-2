@@ -10,6 +10,12 @@ namespace Entidades
 {
     public static class GuardarString
     {
+        /// <summary>
+        /// Guarda un archivo de texto en el escritorio de la maquina
+        /// </summary>
+        /// <param name="texto">texto a guardar</param>
+        /// <param name="archivo">path</param>
+        /// <returns>true si pudo guardar ,false si no</returns>
         
         public static bool Guardar(this string texto , string archivo)
         {
@@ -38,6 +44,7 @@ namespace Entidades
             catch(Exception e)
             { 
                 retorno = false;
+              
             }
             return retorno;
         }
